@@ -6,7 +6,6 @@ import {
   LinkOverlay,
   Text,
   Image,
-  Container,
 } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/media-query";
 

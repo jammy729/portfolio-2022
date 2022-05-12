@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { IconButton } from "@chakra-ui/button";
-import { useColorMode, useColorModeValue } from "@chakra-ui/color-mode";
+import { useColorMode } from "@chakra-ui/color-mode";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoMarkGithub } from "react-icons/go";
 import {
@@ -40,9 +40,9 @@ const Navbar = () => {
           <Box px={3}>
             <Link to="/contact">Contact me</Link>
           </Box>
-          <Box px={3} alignItems='center' display='inline-flex'>
+          <Box px={3} alignItems="center" display="inline-flex">
             <Link to="/contact">
-              <Icon as={GoMarkGithub} mr={1}/> Source
+              <Icon as={GoMarkGithub} mr={1} /> Source
             </Link>
           </Box>
         </HStack>
@@ -53,15 +53,17 @@ const Navbar = () => {
           <Box ml={2} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
+              boxSize='4rem'
                 mx={2}
                 icon={isDark ? <FaSun /> : <FaMoon />}
                 onClick={toggleColorMode}
                 colorScheme={isDark ? "orange" : "purple"}
               />
               <MenuButton
+                boxSize="4rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
+                variant='outline'
                 aria-label="Options"
               />
               <MenuList>
@@ -76,7 +78,7 @@ const Navbar = () => {
                     <Link to="./contact">Contact</Link>
                   </MenuItem>
                   <MenuItem>
-                    <Icon as={GoMarkGithub} mr={1}/> Source
+                    <Icon as={GoMarkGithub} mr={1} /> Source
                   </MenuItem>
                 </MenuGroup>
               </MenuList>
