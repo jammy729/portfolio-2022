@@ -60,7 +60,7 @@ const Navbar = () => {
                 colorScheme={isDark ? "orange" : "purple"}
               />
               <MenuButton
-                boxSize="4rem"
+                boxSize="10rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant='outline'
