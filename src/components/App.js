@@ -12,7 +12,10 @@ import GeoMemories from "./work/geomemories";
 import FinestCup from "./work/finestcup";
 import ExperienceDesign from "./work/experiencedesign";
 import EducationVisualAnalytic from "./work/educationvisualanalytics";
+import PersonalPortfolio from "./work/personalportfolio";
+
 import { Box } from "@chakra-ui/react";
+
 const App = () => {
   return (
     <Box flex={1}>
@@ -38,6 +41,11 @@ const App = () => {
             exact
             path="/work/educationvisualanalytic"
             element={<EducationVisualAnalytic />}
+          />
+          <Route
+            exact
+            path="/work/personalportfolio"
+            element={<PersonalPortfolio />}
           />
 
           <Route exact path="/about" element={<About />} />
