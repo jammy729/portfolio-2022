@@ -11,9 +11,11 @@ import {
   Button,
   Heading,
   Center,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import Work from "../components/work/work";
-
+import { WorkGrid } from "../components/layouts/work-grid";
+import thumbInkDrop from "../contents/portfolio.jpg";
 const Home = () => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
@@ -59,7 +61,7 @@ const Home = () => {
         </Flex>
       </Center>
 
-      <Box pt={isLargeScreen ? "0" : "0"} position='relative'>
+      <Box pt={isLargeScreen ? "0" : "0"} position="relative">
         <Box
           height="40px"
           width={isLargeScreen ? "600px" : "80%"}
@@ -71,7 +73,7 @@ const Home = () => {
           <Text
             textAlign="justify"
             py="10px"
-            fontSize={{ sm: "xl", md: "xl", lg: "lg" }}
+            fontSize={{ sm: "xl", md: "xl", lg: "3lg" }}
           >
             James is a fourth year undergraduate student in Simon Fraser
             University (SFU) majoring in BSc Interactive Arts and Technology. He
@@ -83,29 +85,73 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Box pt={['150px', '230px', '200px', '150px', '150px']}>
-        <Box
-          width={isLargeScreen ? "600px" : "80%"}
-          margin="auto"
-        >
+      <Box pt={["150px", "230px", "200px", "190px", "190px"]}>
+        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
-            About
+            Development
           </Heading>
-          <Text
-            textAlign="justify"
-            py="10px"
-            fontSize={{ sm: "xl", md: "xl", lg: "lg" }}
-          >
-            James is a fourth year undergraduate student in Simon Fraser
-            University (SFU) majoring in BSc Interactive Arts and Technology. He
-            is a friendly UX oriented front-end web and mobile developer mainly
-            working with React/React Native JS framework. He loves planning and
-            designing with code. When he is not coding, he loves to play and
-            teach golf.
-          </Text>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2}>
+            <WorkGrid
+              id="personalportfolio"
+              title="Personal Portfolio"
+              thumbnail={thumbInkDrop}
+            >
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGrid>
+            <WorkGrid
+              id="worldinstitutiondatabase"
+              title="World Institution Database"
+              thumbnail={thumbInkDrop}
+            >
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGrid>
+            <WorkGrid
+              id="educationvisualanalytics"
+              title="Education Visual Analytics"
+              thumbnail={thumbInkDrop}
+            >
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGrid>
+            <WorkGrid
+              id="geomemories"
+              title="Geomemories"
+              thumbnail={thumbInkDrop}
+            >
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGrid>
+          </SimpleGrid>
         </Box>
       </Box>
 
+      <Box pt={2}>
+        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
+          <Heading size={isLargeScreen ? "md" : "lg"} as="u">
+            Design
+          </Heading>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2}>
+            <WorkGrid
+              id="experiencedesign"
+              title="Experience Design"
+              thumbnail={thumbInkDrop}
+            >
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGrid>
+            <WorkGrid
+              id="finestcup"
+              title="Finest Cup"
+              thumbnail={thumbInkDrop}
+            >
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGrid>
+          </SimpleGrid>
+        </Box>
+      </Box>
     </VStack>
   );
 };
