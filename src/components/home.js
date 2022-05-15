@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import {
+  VStack,
   Stack,
   Flex,
   Box,
@@ -11,6 +12,7 @@ import {
   Heading,
   Center,
 } from "@chakra-ui/react";
+import Work from "../components/work/work";
 
 const Home = () => {
   const { colorMode } = useColorMode();
@@ -19,7 +21,7 @@ const Home = () => {
   const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
   return (
-    <Stack direction="column">
+    <VStack>
       <Center>
         <Flex
           direction={isLargeScreen ? "row" : "column"}
@@ -37,15 +39,13 @@ const Home = () => {
             </Text>
             {/* <Image src={PortfolioImg} boxSize="100px" borderRadius="full" /> */}
             <Stack direction={isLargeScreen ? "row" : "column"}>
-              <a href="https://github.com/jammy729/personal-portfolio">
-                <Button
-                  colorScheme="teal"
-                  variant="solid"
-                  size={isLargeScreen ? "lg" : "md"}
-                >
-                  <Link to="/work">See Work</Link>
-                </Button>
-              </a>
+              <Button
+                colorScheme="teal"
+                variant="solid"
+                size={isLargeScreen ? "lg" : "md"}
+              >
+                <Link to="/work">See Work</Link>
+              </Button>
 
               <Button
                 colorScheme="teal"
@@ -59,51 +59,54 @@ const Home = () => {
         </Flex>
       </Center>
 
-      <Box pt={isLargeScreen ? "0" : "0"}>
+      <Box pt={isLargeScreen ? "0" : "0"} position='relative'>
         <Box
           height="40px"
           width={isLargeScreen ? "600px" : "80%"}
           margin="auto"
         >
-          <Heading size={ isLargeScreen ? 'md' : 'lg'} as="u">
+          <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             About
           </Heading>
-          <Text textAlign='justify' py='10px' fontSize={{ sm: 'xl', md: 'xl', lg:'lg'}}>
-            Jaehyung (James) is a fourth year undergraduate student in Simon
-            Fraser University (SFU) majoring in BSc Interactive Arts and
-            Technology. He is a friendly ux oriented front-end web and mobile
-            developer mainly working with React/React Native JS framework. He
-            loves planning and designing with code. When he is not coding, he
-            loves to play and teach golf.
+          <Text
+            textAlign="justify"
+            py="10px"
+            fontSize={{ sm: "xl", md: "xl", lg: "lg" }}
+          >
+            James is a fourth year undergraduate student in Simon Fraser
+            University (SFU) majoring in BSc Interactive Arts and Technology. He
+            is a friendly UX oriented front-end web and mobile developer mainly
+            working with React/React Native JS framework. He loves planning and
+            designing with code. When he is not coding, he loves to play and
+            teach golf.
           </Text>
         </Box>
-
-        {/* <Center mt='150px' px={4}>
-          <SimpleGrid
-            mt={isLargeScreen ? 0 : 4}
-            columns={isLargeScreen ? 2 : 1}
-            spacing={2}
-          >
-            <Grid
-              title={worldDatabase.title}
-              description={worldDatabase.description}
-            />
-            <Grid
-              title={worldDatabase.title}
-              description={worldDatabase.description}
-            />
-            <Grid
-              title={worldDatabase.title}
-              description={worldDatabase.description}
-            />
-            <Grid
-              title={worldDatabase.title}
-              description={worldDatabase.description}
-            />
-          </SimpleGrid>
-        </Center> */}
       </Box>
-    </Stack>
+
+      <Box pt={['150px', '230px', '200px', '150px', '150px']}>
+        <Box
+          width={isLargeScreen ? "600px" : "80%"}
+          margin="auto"
+        >
+          <Heading size={isLargeScreen ? "md" : "lg"} as="u">
+            About
+          </Heading>
+          <Text
+            textAlign="justify"
+            py="10px"
+            fontSize={{ sm: "xl", md: "xl", lg: "lg" }}
+          >
+            James is a fourth year undergraduate student in Simon Fraser
+            University (SFU) majoring in BSc Interactive Arts and Technology. He
+            is a friendly UX oriented front-end web and mobile developer mainly
+            working with React/React Native JS framework. He loves planning and
+            designing with code. When he is not coding, he loves to play and
+            teach golf.
+          </Text>
+        </Box>
+      </Box>
+
+    </VStack>
   );
 };
 

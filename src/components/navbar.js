@@ -49,21 +49,21 @@ const Navbar = () => {
 
         <Spacer />
 
-        <Box flex={2} align="right">
+        <Box flex={3} align="right">
           <Box ml={2} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
-              boxSize='4rem'
+                boxSize="5rem"
                 mx={2}
                 icon={isDark ? <FaSun /> : <FaMoon />}
                 onClick={toggleColorMode}
                 colorScheme={isDark ? "orange" : "purple"}
               />
               <MenuButton
-                boxSize="10rem"
+                boxSize="5rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant='outline'
+                variant="outline"
                 aria-label="Options"
               />
               <MenuList>

@@ -25,18 +25,13 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
 
           <Route exact path="/work" element={<Work />} />
+          /**jkl;
           <Route
             exact
             path="/work/worldinstitutiondatabase"
             element={<UniversityDatabase />}
           />
-          <Route exact path="/work/geomemorioes" element={<GeoMemories />} />
-          <Route exact path="/work/finestcup" element={<FinestCup />} />
-          <Route
-            exact
-            path="/work/experiencedesign"
-            element={<ExperienceDesign />}
-          />
+          <Route exact path="/work/geomemories" element={<GeoMemories />} />
           <Route
             exact
             path="/work/educationvisualanalytic"
@@ -46,6 +41,14 @@ const App = () => {
             exact
             path="/work/personalportfolio"
             element={<PersonalPortfolio />}
+          />
+
+          {/* UX Design  */}
+          <Route exact path="/work/finestcup" element={<FinestCup />} />
+          <Route
+            exact
+            path="/work/experiencedesign"
+            element={<ExperienceDesign />}
           />
 
           <Route exact path="/about" element={<About />} />
