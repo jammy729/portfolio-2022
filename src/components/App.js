@@ -18,14 +18,13 @@ import { Box } from "@chakra-ui/react";
 
 const App = () => {
   return (
-    <Box flex={1}>
+    <Box flex={1} flexDirection='column'>
       <Router>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
 
           <Route exact path="/work" element={<Work />} />
-          /**jkl;
           <Route
             exact
             path="/work/worldinstitutiondatabase"

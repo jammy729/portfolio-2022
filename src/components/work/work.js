@@ -1,7 +1,7 @@
 import React from "react";
 import { WorkGrid } from "../layouts/work-grid";
 import thumbInkDrop from "../../contents/portfolio.jpg";
-import { SimpleGrid, Center } from "@chakra-ui/react";
+import { SimpleGrid, Box, Center } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import Layout from "../layouts/layout";
 
@@ -9,9 +9,10 @@ const Work = () => {
   const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
   return (
-      // <Center px={6} mt='200px'>
+    <Box m={6}>
+      <Center>
         <Layout title="Development">
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing='0'>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing="">
             <WorkGrid
               id="personalportfolio"
               title="Personal Portfolio"
@@ -67,8 +68,8 @@ const Work = () => {
             </SimpleGrid>
           </Layout>
         </Layout>
-
-      // </Center>
+      </Center>
+    </Box>
   );
 };
 
