@@ -27,7 +27,6 @@ const Home = () => {
       <Center>
         <Flex
           direction={isLargeScreen ? "row" : "column"}
-          spacing="200px"
           pt={isLargeScreen ? "28" : "0"}
           pb={5}
           alignSelf="flex-start"

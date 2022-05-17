@@ -53,14 +53,14 @@ const Navbar = () => {
           <Box flex={1} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
-                boxSize="4rem"
+                boxSize="3.5rem"
                 mx={2}
                 icon={isDark ? <FaSun /> : <FaMoon />}
                 onClick={toggleColorMode}
                 colorScheme={isDark ? "orange" : "purple"}
               />
               <MenuButton
-                boxSize="4rem"
+                boxSize="3.5rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"

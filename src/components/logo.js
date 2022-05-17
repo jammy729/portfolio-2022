@@ -29,7 +29,7 @@ const Logo = () => {
           />
           <Heading
             justifyContent="center"
-            size={ isLargeScreen ? 'md' : 'lg'}
+            size={ isLargeScreen ? 'md' : 'md'}
             fontWeight="semibold"
             color={isDark ? "white" : "black"}
           >
