@@ -44,6 +44,7 @@ const Home = () => {
                 colorScheme="teal"
                 variant="solid"
                 size={isLargeScreen ? "lg" : "md"}
+                onClick={() => console.log('clicked')}
               >
                 <Link to="/work">See Work</Link>
               </Button>

@@ -4,9 +4,9 @@ import styled from "@emotion/styled";
 const Bottom = styled.div`
   position: relative;
   width: 100%;
-  bottom: 0;
   color: black;
   text-align: center;
+  padding-bottom: 10px;
 `;
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
     //   &copy; {new Date().getFullYear()} James Yoo. All Rights Reserved.
     // </Box>
 
-    <Box opacity={0.5} >
+    <Box opacity={0.5}>
       <Bottom>
         &copy; {new Date().getFullYear()} James Yoo. All Rights Reserved.
       </Bottom>
