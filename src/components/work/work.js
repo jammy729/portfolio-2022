@@ -18,16 +18,17 @@ const Work = () => {
               title="Personal Portfolio"
               thumbnail={thumbInkDrop}
             >
-              A Markdown note-taking app with 100+ plugins, cross-platform and
-              encrypted data sync support
+              A portfolio created using React JS, Chakra-UI as style framework
+              and Vercel to host.
             </WorkGrid>
             <WorkGrid
               id="worldinstitutiondatabase"
               title="World Institution Database"
               thumbnail={thumbInkDrop}
             >
-              A Markdown note-taking app with 100+ plugins, cross-platform and
-              encrypted data sync support
+              A functional web application that allows users to browse through a
+              list of institutions around the world to gain insights. Used PHP,
+              HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
               id="educationvisualanalytics"

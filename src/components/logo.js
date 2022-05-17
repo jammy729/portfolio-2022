@@ -16,7 +16,7 @@ const LogoBox = styled.span`
   }
 `;
 const Logo = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [isLargeScreen] = useMediaQuery("(min-width:750px)");
   return (
@@ -26,6 +26,7 @@ const Logo = () => {
           <Image
             src={isDark ? HippoImgDark : HippoImg}
             w={{ sm: "70px", md: "60px", lg: "40px" }}
+            pr={2}
           />
           <Heading
             justifyContent="center"

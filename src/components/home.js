@@ -13,15 +13,26 @@ import {
   Center,
   SimpleGrid,
 } from "@chakra-ui/react";
-import Work from "../components/work/work";
 import { WorkGrid } from "../components/layouts/work-grid";
 import thumbInkDrop from "../contents/portfolio.jpg";
+import data from '../components/work/work-experience/data.json'
+
 const Home = () => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
   const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
+  // const CTA = styled.button`
+  //   border: 1px solid #319795;
+  //   cursor: pointer;
+  //   border-radius: 5px;
+  //   padding: 0.25em 1em;
+  //   background: ${props => props.primary ? "#319795" : "#81E6D9"};
+  //   color: ${props => props.primary ? "black" : "white"};
+
+  // `;
+  
   return (
     <VStack>
       <Center>
@@ -39,23 +50,26 @@ const Home = () => {
               Mobile and Web Developer | UX & UI Designer
             </Text>
             {/* <Image src={PortfolioImg} boxSize="100px" borderRadius="full" /> */}
-            <Stack direction={isLargeScreen ? "row" : "column"}>
+            <Stack direction={isLargeScreen ? "row" : "column"} zIndex="999">
               <Button
                 colorScheme="teal"
                 variant="solid"
+                cursor="pointer"
                 size={isLargeScreen ? "lg" : "md"}
-                onClick={() => console.log('clicked')}
+                onClick={() => console.log("clicked")}
               >
                 <Link to="/work">See Work</Link>
               </Button>
 
               <Button
                 colorScheme="teal"
+                cursor="pointer"
                 variant="outline"
                 size={isLargeScreen ? "lg" : "md"}
               >
                 <Link to="/contact">Contact Me</Link>
               </Button>
+              {/* <CTA primary>asdf</CTA> */}
             </Stack>
           </Box>
         </Flex>
@@ -86,6 +100,9 @@ const Home = () => {
       </Box>
 
       <Box pt={["220px", "230px", "200px", "190px", "190px"]}>
+        <Heading size="lg" textAlign="center">
+          Work
+        </Heading>
         <Box width={isLargeScreen ? "600px" : "300px"} margin="auto">
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Development
@@ -96,16 +113,17 @@ const Home = () => {
               title="Personal Portfolio"
               thumbnail={thumbInkDrop}
             >
-              A Markdown note-taking app with 100+ plugins, cross-platform and
-              encrypted data sync support
+              A portfolio created using React JS, Chakra-UI as style framework
+              and Vercel to host.
             </WorkGrid>
             <WorkGrid
               id="worldinstitutiondatabase"
               title="World Institution Database"
               thumbnail={thumbInkDrop}
             >
-              A Markdown note-taking app with 100+ plugins, cross-platform and
-              encrypted data sync support
+              A functional web application that allows users to browse through a
+              list of institutions around the world to gain insights. Used PHP,
+              HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
               id="educationvisualanalytics"

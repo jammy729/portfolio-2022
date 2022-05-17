@@ -17,7 +17,13 @@ import {
   Text,
   Icon,
 } from "@chakra-ui/react";
-import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaSun,
+  FaMoon,
+  FaGithub,
+  FaLinkedin,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 import Logo from "./logo";
 const Navbar = () => {
@@ -66,20 +72,54 @@ const Navbar = () => {
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList w={[ '80vw', '50vw']}>
-                <MenuGroup textAlign='center'>
-                  <MenuItem>
+              <MenuList w={["80vw", "50vw"]}>
+                <MenuGroup>
+                  <MenuItem ml={3}>
                     <Link to="./work">Work</Link>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem ml={3}>
                     <Link to="./about">About</Link>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem ml={3}>
                     <Link to="./contact">Contact</Link>
                   </MenuItem>
-                  <MenuItem>
-                    <Icon as={GoMarkGithub} mr={1} /> Source
+                  <MenuItem ml={3}>
+                    <a
+                      href="https://github.com/jammy729/portfolio-2022"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon as={GoMarkGithub} mr={1} /> Source
+                    </a>
                   </MenuItem>
+                </MenuGroup>
+                <MenuGroup title="Contact" textAlign="left" fontWeight="bold">
+                  <MenuItem ml={3}>
+                    <a
+                      href="https://www.linkedin.com/in/james-yoo-b4a1231a5/"
+                      target="blank"
+                    >
+                      <IconButton
+                        icon={<FaLinkedinIn />}
+                        arial-label='LinkedIn Icon'
+                        w={2}
+                        linkButton={true}
+                        mr={1}
+                      />
+                      LinkedIn
+                    </a>
+                  </MenuItem>
+                  <MenuItem ml={3}>
+                    <a href="https://github.com/jammy729" target="blank">
+                      <IconButton
+                        icon={<FaGithub />}
+                        arial-label='GitHub Icon'
+                        linkButton={true}
+                        mr={1}
+                      />
+                      GitHub
+                    </a>
+                  </MenuItem>{" "}
                 </MenuGroup>
               </MenuList>
             </Menu>
