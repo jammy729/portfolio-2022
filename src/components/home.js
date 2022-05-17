@@ -64,7 +64,7 @@ const Home = () => {
       <Box pt={isLargeScreen ? "0" : "0"} position="relative">
         <Box
           height="40px"
-          width={isLargeScreen ? "600px" : "80%"}
+          width={isLargeScreen ? "600px" : "300px"}
           margin="auto"
         >
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
@@ -85,12 +85,12 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Box pt={["150px", "230px", "200px", "190px", "190px"]}>
-        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
+      <Box pt={["220px", "230px", "200px", "190px", "190px"]}>
+        <Box width={isLargeScreen ? "600px" : "300px"} margin="auto">
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Development
           </Heading>
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2}>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={5}>
             <WorkGrid
               id="personalportfolio"
               title="Personal Portfolio"
@@ -132,7 +132,7 @@ const Home = () => {
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Design
           </Heading>
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2}>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={5}>
             <WorkGrid
               id="experiencedesign"
               title="Experience Design"

@@ -25,7 +25,7 @@ const Navbar = () => {
   const isDark = colorMode === "dark";
   return (
     <Stack direction={"row"} p={5}>
-      <Flex w="100%" mx={7}>
+      <Flex w="full" mx={3}>
         <Logo />
 
         <HStack ml="auto" display={{ base: "none", lg: "flex" }}>
@@ -49,25 +49,25 @@ const Navbar = () => {
 
         <Spacer />
 
-        <Box flex={3} align="right">
-          <Box ml={2} display={{ base: "inline-block", lg: "none" }}>
+        <Box flex={2} align="right">
+          <Box flex={1} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
-                boxSize="5rem"
+                boxSize="4rem"
                 mx={2}
                 icon={isDark ? <FaSun /> : <FaMoon />}
                 onClick={toggleColorMode}
                 colorScheme={isDark ? "orange" : "purple"}
               />
               <MenuButton
-                boxSize="5rem"
+                boxSize="4rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList>
-                <MenuGroup>
+              <MenuList w={[ '80vw', '50vw']}>
+                <MenuGroup textAlign='center'>
                   <MenuItem>
                     <Link to="./work">Work</Link>
                   </MenuItem>

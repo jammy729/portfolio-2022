@@ -30,10 +30,8 @@ const Logo = () => {
           <Heading
             justifyContent="center"
             size={ isLargeScreen ? 'md' : 'lg'}
-            ml="3"
             fontWeight="semibold"
             color={isDark ? "white" : "black"}
-            mr="12"
           >
             <Link to="/">James Yoo</Link>
           </Heading>
