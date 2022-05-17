@@ -43,7 +43,6 @@ const App = () => {
             element={<PersonalPortfolio />}
           />
 
-          {/* UX Design  */}
           <Route exact path="/work/finestcup" element={<FinestCup />} />
           <Route
             exact
