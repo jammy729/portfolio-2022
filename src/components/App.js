@@ -33,7 +33,7 @@ const App = () => {
           <Route exact path="/work/geomemories" element={<GeoMemories />} />
           <Route
             exact
-            path="/work/educationvisualanalytic"
+            path="/work/educationvisualanalytics"
             element={<EducationVisualAnalytic />}
           />
           <Route

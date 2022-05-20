@@ -34,7 +34,7 @@ const Navbar = () => {
       <Flex w="full" mx={3}>
         <Logo />
 
-        <HStack ml="auto" display={{ base: "none", lg: "flex" }}>
+        <HStack ml={5} mt='-10px' display={{ base: "none", lg: "flex" }}>
           <Box px={3}>
             <Link to="./work">
               <Text _hover={{ textDecoration: "u" }}>Work</Text>

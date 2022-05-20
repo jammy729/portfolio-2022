@@ -15,9 +15,12 @@ import {
 } from "@chakra-ui/react";
 import { WorkGrid } from "../components/layouts/work-grid";
 import thumbInkDrop from "../contents/portfolio.jpg";
-import data from '../components/work/work-experience/data.json'
-
+import data from "../components/work/work-experience/data.json";
+import { useEffect } from "react";
 const Home = () => {
+  useEffect(() => {
+    console.log(data[0].key["1"]);
+  }, []);
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
@@ -32,7 +35,7 @@ const Home = () => {
   //   color: ${props => props.primary ? "black" : "white"};
 
   // `;
-  
+
   return (
     <VStack>
       <Center>
@@ -90,20 +93,17 @@ const Home = () => {
             fontSize={{ sm: "xl", md: "xl", lg: "3lg" }}
           >
             James is a fourth year undergraduate student in Simon Fraser
-            University (SFU) majoring in BSc Interactive Arts and Technology. He
-            is a friendly UX oriented front-end web and mobile developer mainly
-            working with React/React Native JS framework. He loves planning and
-            designing with code. When he is not coding, he loves to play and
-            teach golf.
+            University (SFU) majoring in BSc Interactive Arts and Technology
+            with double concentration in Interactive Systems and Design. He is a
+            UX oriented front-end web and mobile developer mainly working with
+            React/React Native JS framework. He loves planning and designing
+            with code. When he is not coding, he loves to play and teach golf.
           </Text>
         </Box>
       </Box>
 
-      <Box pt={["220px", "230px", "200px", "190px", "190px"]}>
-        <Heading size="lg" textAlign="center">
-          Work
-        </Heading>
-        <Box width={isLargeScreen ? "600px" : "300px"} margin="auto">
+      <Box pt={["280px", "230px", "230px", "230px", "230px"]}>
+        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Development
           </Heading>

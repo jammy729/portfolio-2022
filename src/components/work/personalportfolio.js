@@ -9,7 +9,9 @@ const personalportfolio = () => {
   
   return (
     <Center>
-      <Layout title="Personal Portfolio"></Layout>
+      <Layout title="Personal Portfolio">
+        
+      </Layout>
     </Center>
   );
 };
