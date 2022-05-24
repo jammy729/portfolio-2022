@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import {
-  VStack,
   Stack,
   Flex,
   Box,
@@ -37,23 +36,17 @@ const Home = () => {
   // `;
 
   return (
-    <VStack>
+    <Stack direction="column">
       <Center>
-        <Flex
-          direction={isLargeScreen ? "row" : "column"}
-          pt={isLargeScreen ? "28" : "0"}
-          pb={5}
-          alignSelf="flex-start"
-        >
-          <Box mt={isLargeScreen ? -20 : 16} align="flex-start">
+        <Flex py={3}>
+          <Box align="flex-start">
             <Text fontSize="3xl" fontWeight="bold">
               Jaehyung Yoo
             </Text>
             <Text color={isDark ? "gray.200" : "black"} mb={4}>
               Mobile and Web Developer | UX & UI Designer
             </Text>
-            {/* <Image src={PortfolioImg} boxSize="100px" borderRadius="full" /> */}
-            <Stack direction={isLargeScreen ? "row" : "column"} zIndex="999">
+            <Stack direction={isLargeScreen ? "row" : "column"}>
               <Button
                 colorScheme="teal"
                 variant="solid"
@@ -78,19 +71,15 @@ const Home = () => {
         </Flex>
       </Center>
 
-      <Box pt={isLargeScreen ? "0" : "0"} position="relative">
-        <Box
-          height="40px"
-          width={isLargeScreen ? "600px" : "300px"}
-          margin="auto"
-        >
+      <Center>
+        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             About
           </Heading>
           <Text
             textAlign="justify"
             py="10px"
-            fontSize={{ sm: "xl", md: "xl", lg: "3lg" }}
+            fontSize={{ sm: "lg", md: "lg", lg: "md" }}
           >
             James is a fourth year undergraduate student in Simon Fraser
             University (SFU) majoring in BSc Interactive Arts and Technology
@@ -100,14 +89,14 @@ const Home = () => {
             with code. When he is not coding, he loves to play and teach golf.
           </Text>
         </Box>
-      </Box>
+      </Center>
 
-      <Box pt={["280px", "230px", "230px", "230px", "230px"]}>
-        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
+      <Center>
+        <Box width={isLargeScreen ? "600px" : "80%"}>
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Development
           </Heading>
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={5}>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={3}>
             <WorkGrid
               id="personalportfolio"
               title="Personal Portfolio"
@@ -143,14 +132,14 @@ const Home = () => {
             </WorkGrid>
           </SimpleGrid>
         </Box>
-      </Box>
+      </Center>
 
-      <Box pt={2}>
-        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
+      <Center>
+        <Box width={isLargeScreen ? "600px" : "80%"}>
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Design
           </Heading>
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={5}>
+          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={3}>
             <WorkGrid
               id="experiencedesign"
               title="Experience Design"
@@ -169,8 +158,8 @@ const Home = () => {
             </WorkGrid>
           </SimpleGrid>
         </Box>
-      </Box>
-    </VStack>
+      </Center>
+    </Stack>
   );
 };
 

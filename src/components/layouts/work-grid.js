@@ -20,7 +20,6 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
       maxW={isLargeScreen ? "sm" : "lg"}
       maxH="auto"
       pb={6}
-      mb={6}
       textAlign="center"
       position="relative"
     >

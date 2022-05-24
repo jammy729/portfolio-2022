@@ -34,7 +34,7 @@ const Navbar = () => {
       <Flex w="full" mx={3}>
         <Logo />
 
-        <HStack ml={5} mt='-10px' display={{ base: "none", lg: "flex" }}>
+        <HStack ml={5} mt="-10px" display={{ base: "none", lg: "flex" }}>
           <Box px={3}>
             <Link to="./work">
               <Text _hover={{ textDecoration: "u" }}>Work</Text>
@@ -55,7 +55,7 @@ const Navbar = () => {
 
         <Spacer />
 
-        <Box flex={2} align="right">
+        <Box flex={2} align="right" fontSize='md' fontWeight='semibold'>
           <Box flex={1} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
@@ -69,57 +69,35 @@ const Navbar = () => {
                 boxSize="3.5rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
                 aria-label="Options"
+                colorScheme={isDark ? "blue" : "blackAlpha"}
               />
               <MenuList w={["80vw", "50vw"]}>
                 <MenuGroup>
-                  <MenuItem ml={3}>
+                  <MenuItem pl={5}>
                     <Link to="./work">Work</Link>
                   </MenuItem>
-                  <MenuItem ml={3}>
+                  <MenuItem pl={5}>
                     <Link to="./about">About</Link>
                   </MenuItem>
-                  <MenuItem ml={3}>
+                  <MenuItem pl={5}>
                     <Link to="./contact">Contact</Link>
                   </MenuItem>
-                  <MenuItem ml={3}>
-                    <a
-                      href="https://github.com/jammy729/portfolio-2022"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon as={GoMarkGithub} mr={1} /> Source
-                    </a>
-                  </MenuItem>
-                </MenuGroup>
-                <MenuGroup title="Contact" textAlign="left" fontWeight="bold">
-                  <MenuItem ml={3}>
+                  <MenuItem pl={5}>
                     <a
                       href="https://www.linkedin.com/in/james-yoo-b4a1231a5/"
                       target="blank"
                     >
-                      <IconButton
-                        icon={<FaLinkedinIn />}
-                        arial-label='LinkedIn Icon'
-                        w={2}
-                        linkButton={true}
-                        mr={1}
-                      />
+                      <Icon as={FaLinkedin} mr={1} />
                       LinkedIn
                     </a>
                   </MenuItem>
-                  <MenuItem ml={3}>
+                  <MenuItem pl={5}>
                     <a href="https://github.com/jammy729" target="blank">
-                      <IconButton
-                        icon={<FaGithub />}
-                        arial-label='GitHub Icon'
-                        linkButton={true}
-                        mr={1}
-                      />
+                      <Icon as={GoMarkGithub} mr={1} />
                       GitHub
                     </a>
-                  </MenuItem>{" "}
+                  </MenuItem>
                 </MenuGroup>
               </MenuList>
             </Menu>
