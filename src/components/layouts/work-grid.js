@@ -17,7 +17,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
 
   return (
     <Box
-      maxW={isLargeScreen ? "sm" : "lg"}
+      maxW='100%'
       maxH="auto"
       pb={6}
       textAlign="center"
@@ -26,17 +26,17 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
       <Link to={`/work/${id}`}>
         <LinkBox cursor="pointer">
           <Image
+            objectFit='cover'
             margin="auto"
             src={thumbnail}
             alt={title}
-            className="grid-item-thumbnail"
             placeholder="blur"
-            w={isLargeScreen ? "300px" : "500px"}
-            h={isLargeScreen ? "200px" : "270px"}
+            w='100%'
+            h={isLargeScreen ? "300px" : "270px"}
             borderRadius="lg"
           />
           <LinkOverlay to={`/work/${id}`}>
-            <Text mt={2} fontSize={20}>
+            <Text mt={2} fontSize={20} fontWeight="semibold">
               {title}
             </Text>
           </LinkOverlay>
@@ -51,7 +51,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
 
 export const Title = ({ children }) => (
   <Box>
-    <Link to=".work">Works</Link>
+    <Link to="/work">Works</Link>
     <span>
       <ChevronRightIcon />
     </span>
@@ -66,8 +66,8 @@ export const WorkImage = ({ src, alt }) => (
 );
 
 export const Tag = ({ children }) => (
-    <Badge colorScheme='green' mr={2}>
-      { children }
-    </Badge>
+  <Badge colorScheme='green' mr={2}>
+    {children}
+  </Badge>
 );
 

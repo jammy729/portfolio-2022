@@ -14,12 +14,8 @@ import {
 } from "@chakra-ui/react";
 import { WorkGrid } from "../components/layouts/work-grid";
 import thumbInkDrop from "../contents/portfolio.jpg";
-import data from "../components/work/work-experience/data.json";
 import { useEffect } from "react";
 const Home = () => {
-  useEffect(() => {
-    console.log(data[0].key["1"]);
-  }, []);
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
 
@@ -38,13 +34,13 @@ const Home = () => {
   return (
     <Stack direction="column">
       <Center>
-        <Flex py={3}>
+        <Flex my={3} mx={5}>
           <Box align="flex-start">
             <Text fontSize="3xl" fontWeight="bold">
               Jaehyung Yoo
             </Text>
             <Text color={isDark ? "gray.200" : "black"} mb={4}>
-              Mobile and Web Developer | UX & UI Designer
+              Front-end Developer | UX & UI Designer
             </Text>
             <Stack direction={isLargeScreen ? "row" : "column"}>
               <Button
@@ -96,7 +92,7 @@ const Home = () => {
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Development
           </Heading>
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={3}>
+          <SimpleGrid columns='1' spacing={2} py={3}>
             <WorkGrid
               id="personalportfolio"
               title="Personal Portfolio"
@@ -139,7 +135,7 @@ const Home = () => {
           <Heading size={isLargeScreen ? "md" : "lg"} as="u">
             Design
           </Heading>
-          <SimpleGrid columns={isLargeScreen ? "2" : "1"} spacing={2} py={3}>
+          <SimpleGrid columns='1' spacing={2} py={3}>
             <WorkGrid
               id="experiencedesign"
               title="Experience Design"

@@ -31,10 +31,11 @@ const Navbar = () => {
   const isDark = colorMode === "dark";
   return (
     <Stack direction={"row"} p={5}>
-      <Flex w="full" mx={3}>
+      <Flex w="full" mx={2}>
         <Logo />
 
-        <HStack ml={5} mt="-10px" display={{ base: "none", lg: "flex" }}>
+        <HStack ml={7} justifyContent="center"
+          display={{ base: "none", lg: "flex" }}>
           <Box px={3}>
             <Link to="./work">
               <Text _hover={{ textDecoration: "u" }}>Work</Text>
@@ -55,18 +56,18 @@ const Navbar = () => {
 
         <Spacer />
 
-        <Box flex={2} align="right" fontSize='md' fontWeight='semibold'>
+        <Box flex={3} align="right" fontSize='md' fontWeight='semibold'>
           <Box flex={1} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
-                boxSize="3.5rem"
-                mx={2}
+                boxSize="3rem"
+                mx={1}
                 icon={isDark ? <FaSun /> : <FaMoon />}
                 onClick={toggleColorMode}
                 colorScheme={isDark ? "orange" : "purple"}
               />
               <MenuButton
-                boxSize="3.5rem"
+                boxSize="3rem"
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 aria-label="Options"

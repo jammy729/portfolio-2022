@@ -7,12 +7,12 @@ import Contact from "./contact";
 import Work from "./work/work";
 import Footer from "./footer";
 
-import UniversityDatabase from "./work/worldinstitutiondatabase";
-import GeoMemories from "./work/geomemories";
-import FinestCup from "./work/finestcup";
-import ExperienceDesign from "./work/experiencedesign";
-import EducationVisualAnalytic from "./work/educationvisualanalytics";
-import PersonalPortfolio from "./work/personalportfolio";
+import UniversityDatabase from "./work/Development/WorldInstitutionDatabase/worldinstitutiondatabase";
+import GeoMemories from "./work/Development/GeoMemories/geomemories";
+import FinestCup from "./work/Design/FinestCup/finestcup";
+import ExperienceDesign from "./work/Design/ExperienceDesign/experiencedesign";
+import EducationVisualAnalytic from "./work/Development/EducationVisualAnalytics/educationvisualanalytics";
+import PersonalPortfolio from "./work/Development/PersonalPortfolio/personalportfolio";
 
 import { Box } from "@chakra-ui/react";
 

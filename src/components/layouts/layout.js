@@ -8,10 +8,10 @@ const Layout = ({ children, title }) => {
   return (
     <Box>
       <Heading
-        size={ isLargeScreen ? 'md' : 'xl'}
+        size={ isLargeScreen ? 'md' : 'lg'}
         fontWeight="bold"
+        as='u'
         mb={6}
-        px={isLargeScreen ? 10 : 1}
       >
         {title}
       </Heading>

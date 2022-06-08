@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Center, Image, Heading } from "@chakra-ui/react";
+import { Box, Center, Image, Heading, Text} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useColorMode } from "@chakra-ui/color-mode";
 import styled from "@emotion/styled";
@@ -25,7 +25,7 @@ const Logo = () => {
         <LogoBox>
           <Image
             src={isDark ? HippoImgDark : HippoImg}
-            w={{ sm: "70px", md: "60px", lg: "40px" }}
+            w={{ base: '50px' }}
             pr={2}
           />
           <Heading
@@ -34,7 +34,7 @@ const Logo = () => {
             fontWeight="semibold"
             color={isDark ? "white" : "black"}
           >
-            <Link to="/">James Yoo</Link>
+            <Link to="/"><Text fontSize="md">James Yoo</Text></Link>
           </Heading>
         </LogoBox>
       </Center>
