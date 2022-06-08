@@ -34,6 +34,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
             w='100%'
             h={isLargeScreen ? "300px" : "270px"}
             borderRadius="lg"
+            fallbackSrc="https://via.placeholder.com/150"
           />
           <LinkOverlay to={`/work/${id}`}>
             <Text mt={2} fontSize={20} fontWeight="semibold">

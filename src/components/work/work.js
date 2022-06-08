@@ -17,7 +17,7 @@ const Work = () => {
               <WorkGrid
                 id="personalportfolio"
                 title="Personal Portfolio"
-                thumbnail={thumbInkDrop}
+                thumbnail='https://via.placeholder.com/150'
               >
                 A portfolio created using React JS, Chakra-UI as style framework
                 and Vercel to host.
@@ -25,7 +25,7 @@ const Work = () => {
               <WorkGrid
                 id="worldinstitutiondatabase"
                 title="World Institution Database"
-                thumbnail={thumbInkDrop}
+                thumbnail='https://via.placeholder.com/150'
               >
                 A functional web application that allows users to browse through a
                 list of institutions around the world to gain insights. Used PHP,
@@ -34,7 +34,7 @@ const Work = () => {
               <WorkGrid
                 id="educationvisualanalytics"
                 title="Education Visual Analytics"
-                thumbnail={thumbInkDrop}
+                thumbnail='https://via.placeholder.com/150'
               >
                 A Markdown note-taking app with 100+ plugins, cross-platform and
                 encrypted data sync support
@@ -42,7 +42,7 @@ const Work = () => {
               <WorkGrid
                 id="geomemories"
                 title="Geomemories"
-                thumbnail={thumbInkDrop}
+                thumbnail='https://via.placeholder.com/150'
               >
                 A Markdown note-taking app with 100+ plugins, cross-platform and
                 encrypted data sync support
@@ -54,16 +54,16 @@ const Work = () => {
                 <WorkGrid
                   id="experiencedesign"
                   title="Experience Design"
-                  thumbnail={thumbInkDrop}
-                >
+                  thumbnail='https://via.placeholder.com/150'
+                  >
                   A Markdown note-taking app with 100+ plugins, cross-platform and
                   encrypted data sync support
                 </WorkGrid>
                 <WorkGrid
                   id="finestcup"
                   title="Finest Cup"
-                  thumbnail={thumbInkDrop}
-                >
+                  thumbnail='https://via.placeholder.com/150'
+                  >
                   A Markdown note-taking app with 100+ plugins, cross-platform and
                   encrypted data sync support
                 </WorkGrid>
