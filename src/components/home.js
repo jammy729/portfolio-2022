@@ -77,12 +77,12 @@ const Home = () => {
             py="10px"
             fontSize={{ sm: "lg", md: "lg", lg: "md" }}
           >
-            James is a fourth year undergraduate student in Simon Fraser
+            I am a fourth year undergraduate student in Simon Fraser
             University (SFU) majoring in BSc Interactive Arts and Technology
-            with double concentration in Interactive Systems and Design. He is a
+            with double concentration in Interactive Systems and Design. I am an 
             UX oriented front-end web and mobile developer mainly working with
-            React/React Native JS framework. He loves planning and designing
-            with code. When he is not coding, he loves to play and teach golf.
+            React/React Native JS framework. I loves problem solving and designing
+            with code. When I am not coding, I loves to play and teach golf.
           </Text>
         </Box>
       </Center>
