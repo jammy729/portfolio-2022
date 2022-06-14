@@ -37,7 +37,7 @@ const Home = () => {
         <Flex my={3} mx={5}>
           <Box align="flex-start">
             <Text fontSize="3xl" fontWeight="bold">
-              Jaehyung Yoo
+              James Yoo
             </Text>
             <Text color={isDark ? "gray.200" : "black"} mb={4}>
               Front-end Developer | UX & UI Designer
