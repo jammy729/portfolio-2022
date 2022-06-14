@@ -36,7 +36,7 @@ const Home = () => {
       <Center>
         <Flex my={3} mx={5}>
           <Box align="flex-start">
-            <Text fontSize="3xl" fontWeight="bold">
+            <Text fontSize="3xl" fontWeight="semibold">
               James Yoo
             </Text>
             <Text color={isDark ? "gray.200" : "black"} mb={4}>
