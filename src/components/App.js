@@ -18,7 +18,6 @@ import { Box } from "@chakra-ui/react";
 
 const App = () => {
   return (
-    <Box flex={1} flexDirection='column'>
       <Router>
         <Navbar />
         <Routes>
@@ -54,7 +53,6 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
-    </Box>
   );
 };
 

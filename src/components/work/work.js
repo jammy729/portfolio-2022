@@ -9,15 +9,15 @@ const Work = () => {
   const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
   return (
-    <Stack direction='column'>
+    <Stack direction="column">
       <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
         <Center>
-          <Layout title="Development">
-            <SimpleGrid columns='1' spacing={2} py={3}>
+          <Layout title="Development" id="development">
+            <SimpleGrid columns="1" spacing={2} py={3}>
               <WorkGrid
                 id="personalportfolio"
                 title="Personal Portfolio"
-                thumbnail='https://via.placeholder.com/150'
+                thumbnail="https://via.placeholder.com/150"
               >
                 A portfolio created using React JS, Chakra-UI as style framework
                 and Vercel to host.
@@ -25,16 +25,16 @@ const Work = () => {
               <WorkGrid
                 id="worldinstitutiondatabase"
                 title="World Institution Database"
-                thumbnail='https://via.placeholder.com/150'
+                thumbnail="https://via.placeholder.com/150"
               >
-                A functional web application that allows users to browse through a
-                list of institutions around the world to gain insights. Used PHP,
-                HTML, jQuery, and MySQL.
+                A functional web application that allows users to browse through
+                a list of institutions around the world to gain insights. Used
+                PHP, HTML, jQuery, and MySQL.
               </WorkGrid>
               <WorkGrid
                 id="educationvisualanalytics"
                 title="Education Visual Analytics"
-                thumbnail='https://via.placeholder.com/150'
+                thumbnail="https://via.placeholder.com/150"
               >
                 A Markdown note-taking app with 100+ plugins, cross-platform and
                 encrypted data sync support
@@ -42,30 +42,30 @@ const Work = () => {
               <WorkGrid
                 id="geomemories"
                 title="Geomemories"
-                thumbnail='https://via.placeholder.com/150'
+                thumbnail="https://via.placeholder.com/150"
               >
                 A Markdown note-taking app with 100+ plugins, cross-platform and
                 encrypted data sync support
               </WorkGrid>
             </SimpleGrid>
 
-            <Layout title="UX Design">
-              <SimpleGrid columns={isLargeScreen ? "2" : "1"}>
+            <Layout title="Design" id="design">
+              <SimpleGrid columns="1" spacing={2} py={3}>
                 <WorkGrid
                   id="experiencedesign"
                   title="Experience Design"
-                  thumbnail='https://via.placeholder.com/150'
-                  >
-                  A Markdown note-taking app with 100+ plugins, cross-platform and
-                  encrypted data sync support
+                  thumbnail="https://via.placeholder.com/150"
+                >
+                  A Markdown note-taking app with 100+ plugins, cross-platform
+                  and encrypted data sync support
                 </WorkGrid>
                 <WorkGrid
                   id="finestcup"
                   title="Finest Cup"
-                  thumbnail='https://via.placeholder.com/150'
-                  >
-                  A Markdown note-taking app with 100+ plugins, cross-platform and
-                  encrypted data sync support
+                  thumbnail="https://via.placeholder.com/150"
+                >
+                  A Markdown note-taking app with 100+ plugins, cross-platform
+                  and encrypted data sync support
                 </WorkGrid>
               </SimpleGrid>
             </Layout>

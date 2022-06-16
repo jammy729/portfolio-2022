@@ -2,27 +2,35 @@ import React from "react";
 import {
   Center,
   Container,
+  Box,
   List,
   ListItem,
   Text,
   Heading,
-  AspectRatio
+  AspectRatio,
 } from "@chakra-ui/react";
 import { Title, WorkImage, Tag } from "../../../layouts/work-grid";
 import { useMediaQuery } from "@chakra-ui/media-query";
-import video from "./universityDatabase.mp4"
+import video from "./universityDatabase.mp4";
 const WorldInstitutionDatabase = () => {
   const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
   return (
-    <Center>
+    <Box>
       <Container>
         <Title>World Institution Database</Title>
-        <AspectRatio ratio={1}>
+      </Container>
+      <Container maxW={isLargeScreen ? "70%" : "100%"}>
+        <AspectRatio ratio={isLargeScreen ? 2 : 1}>
           <video controls>
-            <source src={require('./universityDatabase.mp4')} type="video/mp4" />
+            <source
+              src={require("./universityDatabase.mp4")}
+              type="video/mp4"
+            />
           </video>
         </AspectRatio>
+      </Container>
+      <Container>
         <Text fontSize={isLargeScreen ? "xl" : "lg"} py={3}>
           A functional web application that allows users to browse through a
           list of institutions around the world to gain insights. Used PHP,
@@ -31,6 +39,9 @@ const WorldInstitutionDatabase = () => {
         <List py={2}>
           <ListItem>
             <Tag>Type</Tag> Web Development
+          </ListItem>
+          <ListItem>
+            <Tag>Partner</Tag> Ha Thu N.
           </ListItem>
           <ListItem>
             <Tag>Stack</Tag> HTML, CSS, PHP, MySQL, jQuery
@@ -47,15 +58,11 @@ const WorldInstitutionDatabase = () => {
           Summary
         </Heading>
         <Text fontSize="lg">
-          Choosing a higher education, studying abroad to experience and earn a
-          degree, going on a short exchange or field school overseas have been
-          popular choices among students. Being able to choose a good
-          institution to spend for the rest of the higher education years can be
-          one of the biggest life decisions of a student and can influence its
-          experience.
+          World Institution Database is a web application built with a team of
+          two including myself with the focus of backend functionalities. 
         </Text>
       </Container>
-    </Center>
+    </Box>
   );
 };
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { GoMarkGithub } from "react-icons/go";
+import { GoMarkGithub, ChevronDownIcon } from "react-icons/go";
 import {
   Flex,
   Stack,
@@ -17,13 +17,7 @@ import {
   Text,
   Icon,
 } from "@chakra-ui/react";
-import {
-  FaSun,
-  FaMoon,
-  FaGithub,
-  FaLinkedin,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import Logo from "./logo";
 const Navbar = () => {
@@ -34,29 +28,34 @@ const Navbar = () => {
       <Flex w="full" mx={2}>
         <Logo />
 
-        <HStack ml={7} justifyContent="center"
-          display={{ base: "none", lg: "flex" }}>
-          <Box px={3}>
-            <Link to="./work">
-              <Text _hover={{ textDecoration: "u" }}>Work</Text>
-            </Link>
-          </Box>
-          <Box px={3}>
-            <Link to="/about">About</Link>
-          </Box>
-          <Box px={3}>
-            <Link to="/contact">Contact me</Link>
-          </Box>
-          <Box px={3} alignItems="center" display="inline-flex">
-            <Link to="/contact">
-              <Icon as={GoMarkGithub} mr={1} /> Source
-            </Link>
-          </Box>
+        <HStack
+          ml={7}
+          justifyContent="center"
+          display={{ base: "none", lg: "flex" }}
+        >
+          <Menu>
+            <Box px={3}>
+              <a href="#design">
+                <Text>Work</Text>
+              </a>
+            </Box>
+            <Box px={3}>
+              <Link to="/about">About</Link>
+            </Box>
+            <Box px={3}>
+              <Link to="/contact">Contact me</Link>
+            </Box>
+            <Box px={3} alignItems="center" display="inline-flex">
+              <Link to="/contact">
+                <Icon as={GoMarkGithub} mr={1} /> Source
+              </Link>
+            </Box>
+          </Menu>
         </HStack>
 
         <Spacer />
 
-        <Box flex={3} align="right" fontSize='md' fontWeight='semibold'>
+        <Box flex={3} align="right" fontSize="md" fontWeight="semibold">
           <Box flex={1} display={{ base: "inline-block", lg: "none" }}>
             <Menu isLazy id="navbar-menu">
               <IconButton
