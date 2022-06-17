@@ -63,7 +63,7 @@ const WorldInstitutionDatabase = () => {
         <WorkImage
           src={dbms}
           alt='Entity Relationship Diagram'
-          caption='Entity-Relations`hip diagram for the web application World Institution Database'
+          caption='Entity-Relationship diagram for the web application World Institution Database'
         />
       </Box>
       <Container>

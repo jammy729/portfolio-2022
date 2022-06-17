@@ -79,3 +79,16 @@ export const About = ({ title, bio }) => {
     </Center>
   );
 };
+
+export const Writings = ({ title, description }) => {
+  return (
+    <Box pb={3}>
+      <Heading size="md" mt={3} mb={1} fontWeight="semibold">
+        { title }
+      </Heading>
+      <Text fontSize="lg">
+        { description }
+      </Text>
+    </Box>
+  );
+};
