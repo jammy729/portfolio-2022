@@ -86,17 +86,15 @@ export const About = ({ title, bio }) => {
       </Box>
     </Center>
   )
-}
+  }
 
+  
 export const Writings = ({ size, title, description }) => {
   return (
-    <>
       <Heading size={size} mt={3} mb={1} fontWeight='semibold'>
         {title}
       </Heading>
-      <Text  mb={3} fontSize='lg' textAlign='justify'>
-        {description}
-      </Text>
-    </>
+      <Text fontSize='lg' textAlign="justify">{description}</Text>
+    </Box>
   )
 }

@@ -4,7 +4,7 @@ import { Title, WorkImage, Tag } from '../../../layouts/work-grid'
 import { Writings } from '../../layout'
 import dbms from '../Images/er-diagram.png'
 import cover from '../Images/image4.png'
-import register from '../Images/register.png'
+//import register from '../Images/register.png'
 
 const WorldInstitutionDatabase = () => {
   return (
@@ -88,7 +88,7 @@ const WorldInstitutionDatabase = () => {
         />
         <Writings
           description="This web application aims to provide a platform where current and former students can
-          share their experiences at their institutions while prospective students can red the experiences
+        share their experiences at their institutions while prospective students can read the experiences
         posted. The web application is set in a way that only the registered members can share experiences 
         and have favourite lists of institutions. Therefore, there are two entities which are the 'Users' 
         and 'Institution', and two relationships between the two entities are the 'Comment' and 'Favourite'"
@@ -101,28 +101,14 @@ const WorldInstitutionDatabase = () => {
 
         <Divider />
 
-        {/* FRONT-END */}
         <Writings
           size='md'
           title='Frontend Development'
           description='After quick sketches and prototype on Figma on how I wanted the forms to look like for login
         and register page, I have decided to code with HTML, and CSS. Wanting the responsiveness in the login and 
         registration form, I used Bootstrap (CSS Framework) to have the form responsive. Instead of inventing a 
-        unique form fields, I have used simple Bootstrap forms so user can focus on the task to login or register.  '
+        unique form fields, I have used simple Bootstrap forms so user can focus on the task to login or register so'
         />
-        <WorkImage
-          src={register}
-          alt='Entity Relationship Diagram'
-          caption='Entity-Relationship diagram for the web application World Institution Database'
-          w='full'
-        />
-
-        <Writings
-          size='sm'
-          title="Validation of the forms"
-          description=""
-          />
-
       </Container>
     </Box>
   )

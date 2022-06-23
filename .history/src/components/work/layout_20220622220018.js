@@ -94,7 +94,7 @@ export const Writings = ({ size, title, description }) => {
       <Heading size={size} mt={3} mb={1} fontWeight='semibold'>
         {title}
       </Heading>
-      <Text  mb={3} fontSize='lg' textAlign='justify'>
+      <Text  mb=fontSize='lg' textAlign='justify'>
         {description}
       </Text>
     </>

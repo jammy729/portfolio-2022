@@ -64,8 +64,15 @@ export const WorkImage = ({ src, alt, caption, w }) => {
 
   const isDark = colorMode === 'dark'
   return (
-    <Box mb={3}>
-      <Image borderRadius='2xl' w={w} src={src} alt={alt} mt={4} />
+    <Box
+    >
+      <Image
+        borderRadius='2xl'
+        w={w}
+        src={src}
+        alt={alt}
+        mt={4}
+      />
       <Center>
         <Text color={isDark ? 'gray.300' : 'gray.500'}>{caption}</Text>
       </Center>

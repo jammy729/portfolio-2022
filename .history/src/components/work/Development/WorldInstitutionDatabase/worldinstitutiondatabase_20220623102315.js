@@ -120,7 +120,7 @@ const WorldInstitutionDatabase = () => {
         <Writings
           size='sm'
           title="Validation of the forms"
-          description=""
+          description="ㅁㄴㅇㄹ"
           />
 
       </Container>

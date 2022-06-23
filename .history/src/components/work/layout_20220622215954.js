@@ -91,10 +91,10 @@ export const About = ({ title, bio }) => {
 export const Writings = ({ size, title, description }) => {
   return (
     <>
-      <Heading size={size} mt={3} mb={1} fontWeight='semibold'>
+      <Heading size={size} mt={3} mb={3} fontWeight='semibold'>
         {title}
       </Heading>
-      <Text  mb={3} fontSize='lg' textAlign='justify'>
+      <Text fontSize='lg' textAlign='justify'>
         {description}
       </Text>
     </>

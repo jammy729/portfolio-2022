@@ -117,11 +117,11 @@ const WorldInstitutionDatabase = () => {
           w='full'
         />
 
+        <Divider />
+
+        {/* BACK-END  */}
         <Writings
-          size='sm'
-          title="Validation of the forms"
-          description=""
-          />
+          sizes
 
       </Container>
     </Box>

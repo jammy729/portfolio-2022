@@ -119,7 +119,7 @@ const WorldInstitutionDatabase = () => {
 
         <Writings
           size='sm'
-          title="Validation of the forms"
+          title="Validation"
           description=""
           />
 
