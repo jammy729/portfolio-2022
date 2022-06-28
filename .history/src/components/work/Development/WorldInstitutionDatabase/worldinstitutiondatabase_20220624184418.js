@@ -22,8 +22,14 @@ const WorldInstitutionDatabase = () => {
   return (
     <Box>
       <Container maxW='850px'>
-        <Title>World Institution Database</Title>
+        <Title> World Institution Database</Title>
         <WorkImage src={cover} alt='Entity Relationship Diagram' w='full' />
+
+        {/* <Text fontSize={isLargeScreen ? 'xl' : 'lg'} py={3}>
+          A functional web application that allows users to browse through a
+          list of institutions around the world to gain insights. Used PHP, HTML,
+          jQuery, and MySQL.
+        </Text> */}
         <List py={2}>
           <ListItem>
             <Tag> Type </Tag> Web Development, Academic Team Project

@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { Title, WorkImage, Tag } from "../../../layouts/work-grid"
 
-const ExperienceDesign = () => {
+const GeoMemories = () => {
     return (
        <Box>
         <Container maxW='850px'>
@@ -30,4 +30,4 @@ const ExperienceDesign = () => {
     )
 }
 
-export default ExperienceDesign
+export default GeoMemories

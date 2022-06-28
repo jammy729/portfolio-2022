@@ -22,8 +22,14 @@ const WorldInstitutionDatabase = () => {
   return (
     <Box>
       <Container maxW='850px'>
-        <Title>World Institution Database</Title>
+        <Title> World Institution Database </Title>
         <WorkImage src={cover} alt='Entity Relationship Diagram' w='full' />
+
+        {/* <Text fontSize={isLargeScreen ? 'xl' : 'lg'} py={3}>
+          A functional web application that allows users to browse through a
+          list of institutions around the world to gain insights. Used PHP, HTML,
+          jQuery, and MySQL.
+        </Text> */}
         <List py={2}>
           <ListItem>
             <Tag> Type </Tag> Web Development, Academic Team Project
@@ -201,7 +207,7 @@ const WorldInstitutionDatabase = () => {
         about this project, it would mainly be the frontend development. Because the group 
         focused more on the backend development, we did not really put much effort in frontend
         design so it does not look good and responsive. Overall, this project was successful
-        and achieved final grade of 93% for this project. I am currently redoing the frontend
+        and achieved final grade of I am currently redoing the frontend
         design as my own project to make better frontend experience using ReactJS as I do not
         want to change the backend, rather mainly the frontend '
         />
@@ -220,4 +226,3 @@ const WorldInstitutionDatabase = () => {
 }
 
 export default WorldInstitutionDatabase
-  

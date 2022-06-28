@@ -21,7 +21,7 @@ const Work = () => {
             </WorkGrid>
             <WorkGrid
                 id='geomemories'
-                title='GeoMemories'
+                title='GeoMem'
                 thumbnail='https://via.placeholder.com/150'
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,

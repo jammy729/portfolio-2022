@@ -21,7 +21,7 @@ const WorldInstitutionDatabase = () => {
 
   return (
     <Box>
-      <Container maxW='850px'>
+      <Container maxW='800px'>
         <Title>World Institution Database</Title>
         <WorkImage src={cover} alt='Entity Relationship Diagram' w='full' />
         <List py={2}>

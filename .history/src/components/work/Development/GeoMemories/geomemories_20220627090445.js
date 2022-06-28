@@ -13,7 +13,7 @@ import { Writings } from '../../layout'
 const GeoMemories = () => {
   return (
     <Box>
-      <Container maxW='850px'>
+      <Container maxW='800px'>
         <Title>GeoMemories</Title>
 
         {/* BADGES  */}

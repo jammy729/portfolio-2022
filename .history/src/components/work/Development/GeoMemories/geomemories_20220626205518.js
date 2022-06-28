@@ -25,7 +25,7 @@ const GeoMemories = () => {
             <Tag>Partner</Tag> Christine Drummond
           </ListItem>
           <ListItem>
-            <Tag>Stack</Tag> Java (Android Studio), XML
+            <Tag>Stack</Tag> Java (Android Studio)
           </ListItem>
         </List>
 

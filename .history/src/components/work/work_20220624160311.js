@@ -1,6 +1,7 @@
 import React from 'react'
 import { WorkGrid } from '../layouts/work-grid'
 import { SimpleGrid, Box, Container } from '@chakra-ui/react'
+import { useMediaQuery } from '@chakra-ui/media-query'
 import Layout from '../layouts/layout'
 import worldThumb from './Development/Images/cover-worldinstitution.png'
 const Work = () => {
@@ -20,8 +21,8 @@ const Work = () => {
               HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
-                id='geomemories'
-                title='GeoMemories'
+                id='finestcup'
+                title='Finest Cup'
                 thumbnail='https://via.placeholder.com/150'
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,

@@ -13,7 +13,7 @@ import { Writings } from '../../layout'
 const GeoMemories = () => {
   return (
     <Box>
-      <Container maxW='850px'>
+      <Container maxW='800px'>
         <Title>GeoMemories</Title>
 
         {/* BADGES  */}
@@ -25,7 +25,7 @@ const GeoMemories = () => {
             <Tag>Partner</Tag> Christine Drummond
           </ListItem>
           <ListItem>
-            <Tag>Stack</Tag> Java (Android Studio), XML
+            <Tag>Stack</Tag> Java (Android Studio)
           </ListItem>
         </List>
 

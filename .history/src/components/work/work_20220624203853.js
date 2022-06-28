@@ -18,10 +18,10 @@ const Work = () => {
               A functional web application that allows users to browse through a
               list of institutions around the world to gain insights. Used PHP,
               HTML, jQuery, and MySQL.
-            </WorkGrid>
+            </WorkGrid>    :?K<
             <WorkGrid
-                id='geomemories'
-                title='GeoMemories'
+                id='experiencedesign'
+                title='Be My Eyes      jl;kjlk;jasdf '
                 thumbnail='https://via.placeholder.com/150'
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,

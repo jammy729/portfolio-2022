@@ -20,7 +20,7 @@ const ExperienceDesign = () => {
                     <Tag>Type</Tag> Experience Design, Academic Team Project
                 </ListItem>
                 <ListItem>
-                    <Tag>Partner</Tag> Tobby, Hana, Amy, Mutte, Meng, 
+                    <Tag>Partner</Tag> Tobby, Hana, Amy, Mutte, 
                 </ListItem>
 
             </List>

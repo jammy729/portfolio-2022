@@ -20,8 +20,8 @@ const Work = () => {
               HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
-                id='geomemories'
-                title='GeoMemories'
+                id='experiencedesign'
+                title='Be My Eyes   '
                 thumbnail='https://via.placeholder.com/150'
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,

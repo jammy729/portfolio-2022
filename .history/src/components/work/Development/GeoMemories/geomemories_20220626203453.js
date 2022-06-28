@@ -9,15 +9,15 @@ import {
 } from '@chakra-ui/react'
 import { Title, WorkImage, Tag } from "../../../layouts/work-grid"
 
-const ExperienceDesign = () => {
+const GeoMemories = () => {
     return (
        <Box>
         <Container maxW='850px'>
-            <Title>Be My Eyes</Title>
+            <Title>GeoMemories</Title>
 
             <List py={2}>
                 <ListItem>
-                    <Tag>Type</Tag> Experience Design, Academic Team Project
+                    <Tag>Type</Tag> Mobile Development, Academic Team Project
                 </ListItem>
                 <ListItem>
                     <Tag>Partner</Tag> Tobby, Hana, Amy, Mutte, Meng, 
@@ -30,4 +30,4 @@ const ExperienceDesign = () => {
     )
 }
 
-export default ExperienceDesign
+export default GeoMemories

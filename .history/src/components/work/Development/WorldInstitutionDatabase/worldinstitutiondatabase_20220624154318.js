@@ -22,8 +22,14 @@ const WorldInstitutionDatabase = () => {
   return (
     <Box>
       <Container maxW='850px'>
-        <Title>World Institution Database</Title>
+        <Title> World Institution Database </Title>
         <WorkImage src={cover} alt='Entity Relationship Diagram' w='full' />
+
+        {/* <Text fontSize={isLargeScreen ? 'xl' : 'lg'} py={3}>
+          A functional web application that allows users to browse through a
+          list of institutions around the world to gain insights. Used PHP, HTML,
+          jQuery, and MySQL.
+        </Text> */}
         <List py={2}>
           <ListItem>
             <Tag> Type </Tag> Web Development, Academic Team Project
@@ -193,15 +199,14 @@ const WorldInstitutionDatabase = () => {
         <Writings
           size='md'
           title='Reflection'
-          description='Through this project, I have seen myself grow as a developer in terms 
+          description='TThrough this project, I have seen myself grow as a developer in terms 
         of collaboration with a member and good understanding of backend development. I have
         learned how to organize the project in terms of timeline to ensure my group meet the
         deadline and how to organize the file structure and write clean code to ensure that
         the group can easily understand the code and find files. If I could change one thing
         about this project, it would mainly be the frontend development. Because the group 
         focused more on the backend development, we did not really put much effort in frontend
-        design so it does not look good and responsive. Overall, this project was successful
-        and achieved final grade of 93% for this project. I am currently redoing the frontend
+        design so it does not look good and responsive. I am currently redoing the frontend
         design as my own project to make better frontend experience using ReactJS as I do not
         want to change the backend, rather mainly the frontend '
         />
@@ -220,4 +225,3 @@ const WorldInstitutionDatabase = () => {
 }
 
 export default WorldInstitutionDatabase
-  

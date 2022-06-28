@@ -1,9 +1,12 @@
 import React from 'react'
 import { WorkGrid } from '../layouts/work-grid'
+import thumbInkDrop from '../../contents/portfolio.jpg'
 import { SimpleGrid, Box, Container } from '@chakra-ui/react'
+import { useMediaQuery } from '@chakra-ui/media-query'
 import Layout from '../layouts/layout'
 import worldThumb from './Development/Images/cover-worldinstitution.png'
 const Work = () => {
+  const [isLargeScreen] = useMediaQuery('(min-width:750px)')
 
   return (
     <Box>
@@ -20,14 +23,13 @@ const Work = () => {
               HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
-                id='geomemories'
-                title='GeoMemories'
-                thumbnail='https://via.placeholder.com/150'
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                error. Quis, excepturi laboriosam debitis voluptate
-              </WorkGrid>
-           
+              id='geomemories'
+              title='Geomemories'
+              thumbnail='https://via.placeholder.com/150'
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              eveniet laudantium sint, officia ad ipsam vitae tenetur
+            </WorkGrid>
           </SimpleGrid>
 
           <Layout title='Other worthy projects' id='design'>
@@ -40,7 +42,14 @@ const Work = () => {
                 A redesign of a mobile app that's aimed towards better
                 connection for visually-impaired users
               </WorkGrid>
-        
+              <WorkGrid
+                id='finestcup'
+                title='Finest Cup'
+                thumbnail='https://via.placeholder.com/150'
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                error. Quis, excepturi laboriosam debitis voluptate
+              </WorkGrid>
             </SimpleGrid>
           </Layout>
         </Layout>

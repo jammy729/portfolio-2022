@@ -25,20 +25,17 @@ const GeoMemories = () => {
             <Tag>Partner</Tag> Christine Drummond
           </ListItem>
           <ListItem>
-            <Tag>Stack</Tag> Java (Android Studio), XML
+            <Tag>Stack</Tag> Java (Android Studio)
           </ListItem>
         </List>
 
-        <Divider borderColor="whiteAlpha.200" borderWidth={1}/>
+        <Divider borderWidth={3}/>
 
         {/* WRITINGS  */}
         <Writings 
         size="md"
         title="Summary"
-        description="GeoMemories is a travel journal application,
-        allowing users to capture memories by pinning the location 
-        on a map as a destination marker and create posts. It allows
-        users to "
+        description=""
         />
       </Container>
     </Box>
