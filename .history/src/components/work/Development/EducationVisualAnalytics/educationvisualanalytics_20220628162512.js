@@ -68,7 +68,7 @@ const EducationVisualAnalytics = () => {
           I used data visualizations that are interactive using these four
           domain questions.
         </DescriptionText>
-        <OrderedList mb={3}>
+        <OrderedList>
           <ListItem>
             Do parental level of education have any influence on the
             child's/student performance
@@ -87,8 +87,7 @@ const EducationVisualAnalytics = () => {
           </ListItem>
         </OrderedList>
 
-        <Divider />
-
+<Divider />
         {/* THE DATASET  */}
         <Writing size='md' title='The Dataset' />
         <DescriptionText>
@@ -100,15 +99,13 @@ const EducationVisualAnalytics = () => {
           >
             <u>Exam Scores</u>
           </a>
-          <br />
+          &
           <a
             href='http://roycekimmons.com/tools/generated_data/graduation_rate'
             target='blank'
           >
             <u>Graduation Rate</u>
           </a>
-          The two dataset had some dimensions that were not needed in this
-          visualization or to answer the domain questions so I cleaned dataset.
         </DescriptionText>
       </Container>
     </Box>

@@ -100,15 +100,13 @@ const EducationVisualAnalytics = () => {
           >
             <u>Exam Scores</u>
           </a>
-          <br />
+          &
           <a
             href='http://roycekimmons.com/tools/generated_data/graduation_rate'
             target='blank'
           >
             <u>Graduation Rate</u>
           </a>
-          The two dataset had some dimensions that were not needed in this
-          visualization or to answer the domain questions so I cleaned dataset.
         </DescriptionText>
       </Container>
     </Box>

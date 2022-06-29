@@ -35,7 +35,7 @@ const Navbar = () => {
           alignItems='center'
           display={{ base: 'none', lg: 'flex' }}
         >
-          <Menu>
+          <Menu justifyContent='center' pt='-10px'>
             <Box px={3}>
               <Link to='./work'>
                 <Text>Work</Text>

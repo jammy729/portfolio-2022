@@ -1,13 +1,6 @@
 import React from 'react'
 import { Title, WorkImage, Tag } from '../../../layouts/work-grid'
-import {
-  Box,
-  Container,
-  List,
-  ListItem,
-  OrderedList,
-  Divider
-} from '@chakra-ui/react'
+import { Box, Container, List, ListItem, OrderedList, Divider } from '@chakra-ui/react'
 import { Writing, DescriptionText } from '../../layout'
 
 const EducationVisualAnalytics = () => {
@@ -60,15 +53,13 @@ const EducationVisualAnalytics = () => {
           graduate.
         </DescriptionText>
 
-        <Divider />
-
         {/* DOMAIN QUESTIONS  */}
         <Writing size='md' title='Domain Questions' />
         <DescriptionText>
           I used data visualizations that are interactive using these four
           domain questions.
         </DescriptionText>
-        <OrderedList mb={3}>
+        <OrderedList>
           <ListItem>
             Do parental level of education have any influence on the
             child's/student performance
@@ -82,37 +73,42 @@ const EducationVisualAnalytics = () => {
             college
           </ListItem>
           <ListItem>
-            How does parental income and level of education influence student's
+            How does parental income and level of education influence student’s
             years to graduate?
           </ListItem>
         </OrderedList>
-
-        <Divider />
-
-        {/* THE DATASET  */}
-        <Writing size='md' title='The Dataset' />
-        <DescriptionText>
-          I have used two datasets from Royce Kimmons and the datasets are
-          called: <br />
-          <a
-            href='http://roycekimmons.com/tools/generated_data/exams'
-            target='blank'
-          >
-            <u>Exam Scores</u>
-          </a>
-          <br />
-          <a
-            href='http://roycekimmons.com/tools/generated_data/graduation_rate'
-            target='blank'
-          >
-            <u>Graduation Rate</u>
-          </a>
-          The two dataset had some dimensions that were not needed in this
-          visualization or to answer the domain questions so I cleaned dataset.
-        </DescriptionText>
       </Container>
     </Box>
   )
 }
 
 export default EducationVisualAnalytics
+
+/* <Center>
+<Container>
+  <Title>Education Visual Analytic</Title>
+  <Text fontSize={isLargeScreen ? "lg" : "lg"} py={3}>
+    Designed and implemented an interactive visualization for
+    multidimensional data using Observable.{" "}
+  </Text>
+  <Text fontSize={isLargeScreen ? "lg" : "lg"} py={3}>
+    Implemented two datasets to investigate and question the impact of
+    parental levels of education and income on the student's performance
+    in school and graduation rate.
+  </Text>
+  <List py={2}>
+    <ListItem>
+      <Tag>Type</Tag> Academic Project
+    </ListItem>
+    <ListItem>
+      <Tag>Stack</Tag> JavaScript and D3JS (visualization library)
+    </ListItem>
+    <ListItem>
+      <Tag>Website</Tag>{" "}
+      <a href="https://observablehq.com/@jamesyoo/iat-355-final-project-spring-2021/2">
+        https://observablehq.com/@jamesyoo/iat-355-final-project-spring-2021/2
+      </a>
+    </ListItem>
+  </List>
+</Container>
+</Center> */

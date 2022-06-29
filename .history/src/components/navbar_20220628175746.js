@@ -25,17 +25,15 @@ const Navbar = () => {
   const isDark = colorMode === 'dark'
   return (
     <Stack direction={'row'} p={5}>
-      <Flex w='full' mx={2}>
+      <Flex w='full' m>
         <Logo />
 
-        {/* DESKTOP  */}
         <HStack
           ml={7}
           justifyContent='center'
-          alignItems='center'
           display={{ base: 'none', lg: 'flex' }}
         >
-          <Menu>
+          <Menu justifyContent='center' mt={3}>
             <Box px={3}>
               <Link to='./work'>
                 <Text>Work</Text>
@@ -44,12 +42,19 @@ const Navbar = () => {
             <Box px={3}>
               <Link to='/contact'>Contact me</Link>
             </Box>
+            {/* <Box px={3} alignItems='center' display='inline-flex'>
+              <a
+                href='https://github.com/jammy729/portfolio-2022'
+                target='blank'
+              >
+                <Icon as={GoMarkGithub} mr={1} /> Source
+              </a>
+            </Box> */}
           </Menu>
         </HStack>
 
         <Spacer />
 
-        {/* RESPONSIVE  */}
         <Box flex={3} align='right' fontSize='md' fontWeight='semibold'>
           <Box flex={1} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id='navbar-menu'>

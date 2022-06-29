@@ -108,7 +108,7 @@ const EducationVisualAnalytics = () => {
             <u>Graduation Rate</u>
           </a>
           The two dataset had some dimensions that were not needed in this
-          visualization or to answer the domain questions so I cleaned dataset.
+          visualization or to answer the domain questions so 
         </DescriptionText>
       </Container>
     </Box>
