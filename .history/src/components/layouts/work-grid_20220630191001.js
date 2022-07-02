@@ -18,7 +18,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
   const [isLargeScreen] = useMediaQuery('(min-width:750px)')
 
   return (
-    <Box maxW='100%' maxH='auto' pb={6} textAlign='center' position='relative'>
+    <Box maxW='100%' maxH='auto' pb={6} pt={4} textAlign='center' position='relative'>
       <Link to={`/work/${id}`}>
         <LinkBox cursor='pointer'>
           <Image
@@ -31,8 +31,6 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
             h={isLargeScreen ? '300px' : '270px'}
             borderRadius='lg'
             fallbackSrc='https://via.placeholder.com/150'
-            border='2px'
-            borderColor='gray.200'
           />
           <LinkOverlay to={`/work/${id}`}>
             <Text mt={2} fontSize={20} fontWeight='semibold'>
@@ -49,7 +47,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
 }
 
 export const Title = ({ children }) => (
-  <Box mt={5}>
+  <Box>
     <Link to='/work'>Works</Link>
     <span>
       <ChevronRightIcon />

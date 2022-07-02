@@ -32,7 +32,6 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
             borderRadius='lg'
             fallbackSrc='https://via.placeholder.com/150'
             border='2px'
-            borderColor='gray.200'
           />
           <LinkOverlay to={`/work/${id}`}>
             <Text mt={2} fontSize={20} fontWeight='semibold'>

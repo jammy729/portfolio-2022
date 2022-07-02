@@ -22,7 +22,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
       <Link to={`/work/${id}`}>
         <LinkBox cursor='pointer'>
           <Image
-            objectFit='cover'
+            objectFit='fit'
             margin='auto'
             src={thumbnail}
             alt={title}
@@ -31,8 +31,7 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
             h={isLargeScreen ? '300px' : '270px'}
             borderRadius='lg'
             fallbackSrc='https://via.placeholder.com/150'
-            border='2px'
-            borderColor='gray.200'
+            borderColor='black'
           />
           <LinkOverlay to={`/work/${id}`}>
             <Text mt={2} fontSize={20} fontWeight='semibold'>

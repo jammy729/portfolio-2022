@@ -29,19 +29,19 @@ const App = () => {
         <Route exact path='/work/geomemories' element={<GeoMemories />} />
         <Route
           exact
-          path='/work/education-visual-analytics'
+          path='/work/educationvisualanalytics'
           element={<EducationVisualAnalytic />}
         />
         <Route
           exact
-          path='/work/personal-portfolio'
+          path='/work/personalportfolio'
           element={<PersonalPortfolio />}
         />
 
-        <Route exact path='/work/finest-cup' element={<FinestCup />} />
+        <Route exact path='/work/finestcup' element={<FinestCup />} />
         <Route
           exact
-          path='/work/experience-design'
+          path='/work/experiencedesign'
           element={<ExperienceDesign />}
         />
         <Route exact path='/contact' element={<Contact />} />

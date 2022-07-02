@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { Writing, DescriptionText } from '../../layout'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import data1 from '../Images/data11.png'
+import data1 from '../Images/untitled.png'
 import data2 from '../Images/q2.png'
 import pdf from '../Images/eva.pdf'
 
@@ -139,12 +139,6 @@ const EducationVisualAnalytics = () => {
           in this visualization is the ability to sort histogram from ascending
           to descending. This allows the user to easily identify the extremum
           and also sort the data cases.
-        </DescriptionText>
-        <DescriptionText>
-          The interactivity in this is the ability for user to ascend or descend
-          the orders in which they prefer. Through this interactivity, we can
-          see that higher the education, the median value of subject score is
-          generally much higher. 
         </DescriptionText>
         2. Do students with the resource or opportunity to have the test
         preparation score higher on exams?

@@ -11,7 +11,7 @@ const Work = () => {
         <Layout title='Development' id='development'>
           <SimpleGrid columns='1' spacing={2} py={3}>
             <WorkGrid
-              id='world-institution-database'
+              id='world-institutiondatabase'
               title='World Institution Database'
               thumbnail={worldThumb}
             >
@@ -20,7 +20,7 @@ const Work = () => {
               HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
-              id='education-visual-analytics'
+              id='educationvisualanalytics'
               title='Educational Visual Analytics'
               thumbnail={evaThumb}
             >

@@ -39,7 +39,7 @@ const Navbar = () => {
           <Menu>
             <Box px={3}>
               <Link to='./work'>
-                <Text fontWeight='semibold'>Works</Text>
+                <Text fontWeight='semibold'>Work</Text>
               </Link>
             </Box>
             <Box px={3}>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <MenuList w={['80vw', '50vw']}>
                 <MenuGroup>
                   <MenuItem pl={5}>
-                    <Link to='./work'>Works</Link>
+                    <Link to='./work'>Work</Link>
                   </MenuItem>
                   <MenuItem pl={5}>
                     <Link to='./contact'>Contact</Link>

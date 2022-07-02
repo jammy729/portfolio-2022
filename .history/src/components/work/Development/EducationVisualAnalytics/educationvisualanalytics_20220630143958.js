@@ -141,10 +141,8 @@ const EducationVisualAnalytics = () => {
           and also sort the data cases.
         </DescriptionText>
         <DescriptionText>
-          The interactivity in this is the ability for user to ascend or descend
-          the orders in which they prefer. Through this interactivity, we can
-          see that higher the education, the median value of subject score is
-          generally much higher. 
+          The interactivity in this is the ability for user to ascend or descend the orders in 
+          which they prefer. Through this interactivity, we can see that higher the education, 
         </DescriptionText>
         2. Do students with the resource or opportunity to have the test
         preparation score higher on exams?

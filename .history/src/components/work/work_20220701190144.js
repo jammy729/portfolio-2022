@@ -20,7 +20,7 @@ const Work = () => {
               HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
-              id='education-visual-analytics'
+              id='education-visuala-nalytics'
               title='Educational Visual Analytics'
               thumbnail={evaThumb}
             >

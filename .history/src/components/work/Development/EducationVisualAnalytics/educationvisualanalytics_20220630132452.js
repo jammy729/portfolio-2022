@@ -11,9 +11,9 @@ import {
 } from '@chakra-ui/react'
 import { Writing, DescriptionText } from '../../layout'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import data1 from '../Images/data11.png'
+import data1 from '../Images/untitled.png'
 import data2 from '../Images/q2.png'
-import pdf from '../Images/eva.pdf'
+import pdf from "../Images/eva.pdf"
 
 const EducationVisualAnalytics = () => {
   return (
@@ -140,12 +140,6 @@ const EducationVisualAnalytics = () => {
           to descending. This allows the user to easily identify the extremum
           and also sort the data cases.
         </DescriptionText>
-        <DescriptionText>
-          The interactivity in this is the ability for user to ascend or descend
-          the orders in which they prefer. Through this interactivity, we can
-          see that higher the education, the median value of subject score is
-          generally much higher. 
-        </DescriptionText>
         2. Do students with the resource or opportunity to have the test
         preparation score higher on exams?
         <WorkImage
@@ -163,15 +157,10 @@ const EducationVisualAnalytics = () => {
           preparation course or academy while other households may not be able
           to afford to do so.
         </DescriptionText>
-        <Link
-          color='blue.500'
-          href={pdf}
-          isExternal
-          target='blank'
-          download='DataViz-Report.pdf'
-        >
+        <Link color='blue.500' src='./eva.pdf' isExternal target='blank' download>
           To see more, click here <ExternalLinkIcon mx='2px' />
         </Link>
+        <a href={}></a>
       </Container>
     </Box>
   )

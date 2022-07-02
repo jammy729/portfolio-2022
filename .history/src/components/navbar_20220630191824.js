@@ -39,7 +39,7 @@ const Navbar = () => {
           <Menu>
             <Box px={3}>
               <Link to='./work'>
-                <Text fontWeight='semibold'>Works</Text>
+                <Text fontWeight='semibold'>Work</Text>
               </Link>
             </Box>
             <Box px={3}>
@@ -56,10 +56,7 @@ const Navbar = () => {
         <Box flex={3} align='right' fontSize='md' fontWeight='semibold'>
           <Box flex={1} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id='navbar-menu'>
-              <Tooltip
-                label={isDark ? 'Light Mode' : 'Dark Mode'}
-                fontSize='md'
-              >
+              <Tooltip label={ isDark ? ''} fontSize='md'>
                 <IconButton
                   boxSize='3rem'
                   mx={1}
@@ -68,17 +65,19 @@ const Navbar = () => {
                   colorScheme={isDark ? 'orange' : 'purple'}
                 />
               </Tooltip>
-              <MenuButton
-                boxSize='3rem'
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                aria-label='Options'
-                colorScheme={isDark ? 'blue' : 'blackAlpha'}
-              />
+              <Tooltip label='Dark Mode' fontSize='md'>
+                <MenuButton
+                  boxSize='3rem'
+                  as={IconButton}
+                  icon={<HamburgerIcon />}
+                  aria-label='Options'
+                  colorScheme={isDark ? 'blue' : 'blackAlpha'}
+                />
+              </Tooltip>
               <MenuList w={['80vw', '50vw']}>
                 <MenuGroup>
                   <MenuItem pl={5}>
-                    <Link to='./work'>Works</Link>
+                    <Link to='./work'>Work</Link>
                   </MenuItem>
                   <MenuItem pl={5}>
                     <Link to='./contact'>Contact</Link>
@@ -109,14 +108,12 @@ const Navbar = () => {
             href='https://www.linkedin.com/in/james-yoo-b4a1231a5/'
             target='blank'
           >
-            <Tooltip label='LinkedIn' fontSize='md'>
-              <IconButton
-                icon={<FaLinkedin />}
-                isRound='true'
-                linkButton={true}
-                mx={2}
-              />
-            </Tooltip>
+            <IconButton
+              icon={<FaLinkedin />}
+              isRound='true'
+              linkButton={true}
+              mx={2}
+            />
           </a>
           <a href='https://github.com/jammy729' target='blank'>
             <IconButton icon={<FaGithub />} isRound='true' linkButton={true} />

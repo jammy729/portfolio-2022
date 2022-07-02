@@ -39,7 +39,7 @@ const Navbar = () => {
           <Menu>
             <Box px={3}>
               <Link to='./work'>
-                <Text fontWeight='semibold'>Works</Text>
+                <Text fontWeight='semibold'>Work</Text>
               </Link>
             </Box>
             <Box px={3}>

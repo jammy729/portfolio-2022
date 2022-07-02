@@ -3,7 +3,6 @@ import { WorkGrid } from '../layouts/work-grid'
 import { SimpleGrid, Box, Container } from '@chakra-ui/react'
 import Layout from '../layouts/layout'
 import worldThumb from './Development/Images/cover-worldinstitution.png'
-import evaThumb from './Development/Images/cover2.png'
 const Work = () => {
   return (
     <Box>
@@ -11,7 +10,7 @@ const Work = () => {
         <Layout title='Development' id='development'>
           <SimpleGrid columns='1' spacing={2} py={3}>
             <WorkGrid
-              id='world-institution-database'
+              id='worldinstitutiondatabase'
               title='World Institution Database'
               thumbnail={worldThumb}
             >
@@ -20,13 +19,11 @@ const Work = () => {
               HTML, jQuery, and MySQL.
             </WorkGrid>
             <WorkGrid
-              id='education-visual-analytics'
+              id='educationvisualanalytics'
               title='Educational Visual Analytics'
-              thumbnail={evaThumb}
+              thumbnail='https://via.placeholder.com/150'
             >
-              Designed and implemented an interactive visualization for
-              multidimensional data using ObservableHQ and D3JS (Visualization
-              Library)
+            
             </WorkGrid>
           </SimpleGrid>
         </Layout>
