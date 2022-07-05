@@ -9,6 +9,7 @@ import {
   Box,
   Text,
   Button,
+  Stack,
   Heading,
   Image,
   SimpleGrid
@@ -19,18 +20,13 @@ export const HeroSection = ({ name, role, work, contact }) => {
   const { colorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
+  const [isLargeScreen] = useMediaQuery('(min-width:750px)')
   return (
     <Center>
       <Flex>
         <Box>
           <Center>
-            <Image
-              boxSize='350px'
-              src={profile}
-              objectFit='cover'
-              borderRadius='lg'
-              objectPosition={'0% 90%'}
-            />
+            <Image w='350px' src={profile} objectFit='fill' borderRadius='lg' />
           </Center>
 
           <Text fontSize='3xl' fontWeight='semibold'>

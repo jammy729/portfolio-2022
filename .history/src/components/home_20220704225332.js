@@ -28,7 +28,7 @@ const Home = () => {
         <Box width={isLargeScreen ? '600px' : '80%'} margin='auto'>
           <Text textAlign='justify' fontSize={{ sm: 'lg', md: 'lg', lg: 'md' }}>
             This website is built using ReactJS, Chakra-UI (CSS Framework),
-            EmailJS and hosted on Vercel.
+            EmailJS and hosted on Vercel
           </Text>
         </Box>
       </Center>

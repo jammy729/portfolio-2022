@@ -9,27 +9,28 @@ import {
   Box,
   Text,
   Button,
+  Stack,
   Heading,
   Image,
   SimpleGrid
 } from '@chakra-ui/react'
-import profile from '../work/Home/cover.JPG'
+import profile from '../work/Home/profile.JPG'
 
 export const HeroSection = ({ name, role, work, contact }) => {
   const { colorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
+  const [isLargeScreen] = useMediaQuery('(min-width:750px)')
   return (
     <Center>
       <Flex>
         <Box>
           <Center>
             <Image
-              boxSize='350px'
+              boxSize={isLargeScreen ? '300px' : '250px'}
               src={profile}
               objectFit='cover'
               borderRadius='lg'
-              objectPosition={'0% 90%'}
             />
           </Center>
 
@@ -39,14 +40,13 @@ export const HeroSection = ({ name, role, work, contact }) => {
           <Text color={isDark ? 'gray.200' : 'black'} mb={4}>
             {role}
           </Text>
-          <SimpleGrid column={1}>
+          <Stack direction={isLargeScreen ? 'row' : 'column'}>
             <Link to='./work'>
               <Button
                 colorScheme='teal'
                 cursor='pointer'
                 variant='solid'
                 w='full'
-                mb={3}
               >
                 {work}
               </Button>
@@ -61,7 +61,7 @@ export const HeroSection = ({ name, role, work, contact }) => {
                 {contact}
               </Button>
             </Link>
-          </SimpleGrid>
+          </Stack>
         </Box>
       </Flex>
     </Center>

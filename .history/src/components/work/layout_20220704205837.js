@@ -9,6 +9,7 @@ import {
   Box,
   Text,
   Button,
+  Stack,
   Heading,
   Image,
   SimpleGrid
@@ -24,13 +25,7 @@ export const HeroSection = ({ name, role, work, contact }) => {
       <Flex>
         <Box>
           <Center>
-            <Image
-              boxSize='350px'
-              src={profile}
-              objectFit='cover'
-              borderRadius='lg'
-              objectPosition={'0% 90%'}
-            />
+            <Image w='350px' src={profile} objectFit='fill' borderRadius='lg' />
           </Center>
 
           <Text fontSize='3xl' fontWeight='semibold'>

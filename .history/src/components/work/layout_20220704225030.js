@@ -9,6 +9,7 @@ import {
   Box,
   Text,
   Button,
+  Stack,
   Heading,
   Image,
   SimpleGrid

@@ -9,6 +9,7 @@ import {
   Box,
   Text,
   Button,
+  Stack,
   Heading,
   Image,
   SimpleGrid
@@ -29,7 +30,6 @@ export const HeroSection = ({ name, role, work, contact }) => {
               src={profile}
               objectFit='cover'
               borderRadius='lg'
-              objectPosition={'0% 90%'}
             />
           </Center>
 
