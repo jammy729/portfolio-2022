@@ -1,7 +1,7 @@
-import { Link as LinkRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { IconButton } from '@chakra-ui/button'
 import { useColorMode } from '@chakra-ui/color-mode'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { GoMarkGithub } from 'react-icons/go'
 import {
   Flex,
@@ -16,8 +16,7 @@ import {
   MenuGroup,
   Text,
   Icon,
-  Tooltip,
-  Link
+  Tooltip
 } from '@chakra-ui/react'
 import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa'
 
@@ -40,18 +39,25 @@ const Navbar = () => {
         >
           <Menu>
             <Box px={3}>
-              <LinkRouter to='./work'>
+              <Link to='./work'>
                 <Text fontWeight='semibold'>Works</Text>
-              </LinkRouter>
+              </Link>
             </Box>
             <Box px={3}>
-              <LinkRouter to='./contact'>
+              <Link to='./contact'>
                 <Text fontWeight='semibold'>Contact Me</Text>
-              </LinkRouter>
+              </Link>
             </Box>
             <Box px={3}>
-              <Link href={resume} isExternal target='blank' download='Resume'>
-                <Text fontWeight='semibold'>Resume</Text>
+              <Link
+                color='blue.500'
+                href={}
+                isExternal
+                target='blank'
+                download='DataViz-Report.pdf'
+              >
+                Click here to see download my Data Visualization Report (PDF)
+                <ExternalLinkIcon mx='2px' />
               </Link>
             </Box>
           </Menu>
@@ -87,20 +93,10 @@ const Navbar = () => {
               <MenuList w={['80vw', '50vw']}>
                 <MenuGroup>
                   <MenuItem pl={5}>
-                    <LinkRouter to='./work'>Works</LinkRouter>
+                    <Link to='./work'>Works</Link>
                   </MenuItem>
                   <MenuItem pl={5}>
-                    <LinkRouter to='./contact'>Contact</LinkRouter>
-                  </MenuItem>
-                  <MenuItem pl={5}>
-                    <Link
-                      href={resume}
-                      isExternal
-                      target='blank'
-                      download='Resume'
-                    >
-                      <Text>Resume</Text>
-                    </Link>
+                    <Link to='./contact'>Contact</Link>
                   </MenuItem>
                   <MenuItem pl={5}>
                     <a

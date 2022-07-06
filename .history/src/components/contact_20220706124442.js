@@ -73,7 +73,7 @@ const Contact = () => {
 
   return (
     <Box>
-      <Container maxW='650px'>
+      <Container maxW='550px'>
         <Center>
           <Heading size='md' centerContent mb={8}>
             Contact Me!

@@ -29,7 +29,7 @@ export const HeroSection = ({ name, role, work, contact }) => {
               src={profile}
               objectFit='cover'
               borderRadius='full'
-              objectPosition={'0% 100%'}
+              objectPosition={'0% 110%'}
             />
           </Center>
 

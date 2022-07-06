@@ -1,7 +1,7 @@
 import { Link as LinkRouter } from 'react-router-dom'
 import { IconButton } from '@chakra-ui/button'
 import { useColorMode } from '@chakra-ui/color-mode'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { GoMarkGithub } from 'react-icons/go'
 import {
   Flex,
@@ -90,7 +90,7 @@ const Navbar = () => {
                     <LinkRouter to='./work'>Works</LinkRouter>
                   </MenuItem>
                   <MenuItem pl={5}>
-                    <LinkRouter to='./contact'>Contact</LinkRouter>
+                    <Link to='./contact'>Contact</Link>
                   </MenuItem>
                   <MenuItem pl={5}>
                     <Link

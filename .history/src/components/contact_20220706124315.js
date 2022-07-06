@@ -73,7 +73,7 @@ const Contact = () => {
 
   return (
     <Box>
-      <Container maxW='650px'>
+      <Container maxW='550px'>
         <Center>
           <Heading size='md' centerContent mb={8}>
             Contact Me!
@@ -124,8 +124,24 @@ const Contact = () => {
               />
             </Center>
             <Link href='mailto:james_yoo_2@sfu.ca'>
-              <Text textAlign='center'>james_yoo_2@sfu.ca</Text>
+              <Text textAlign='center'>Email</Text>
             </Link>
+            <Text>james_yoo_2@sfu.ca</Text>
+          </Stack>
+          <Stack>
+            <Center>
+              <Icon
+                justifyContent='center'
+                alignItems='center'
+                as={MdEmail}
+                w={12}
+                h={12}
+              />
+            </Center>
+            <Link href='mailto:james_yoo_2@sfu.ca'>
+              <Text textAlign='center'>Email</Text>
+            </Link>
+            <Text>james_yoo_2@sfu.ca</Text>
           </Stack>
         </Stack>
         <Stack direction='column' mt='5rem'>
