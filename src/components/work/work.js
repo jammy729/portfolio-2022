@@ -4,6 +4,7 @@ import { SimpleGrid, Box, Container } from "@chakra-ui/react";
 import Layout from "../layouts/layout";
 import worldThumb from "./Development/Images/cover-worldinstitution.png";
 import evaThumb from "./Development/Images/cover2.png";
+import brixThumb from "./Development/Brixwork/cover.png";
 const Work = () => {
   return (
     <Box>
@@ -13,7 +14,7 @@ const Work = () => {
             <WorkGrid
               id="brixwork"
               title="Brixwork Real Estate Marketing"
-              thumbnail={evaThumb}
+              thumbnail={brixThumb}
             >
               Develop custom websites that are perfect for working with the
               brand guidelines and implement on-site SEO engineering to optimize
