@@ -1,5 +1,5 @@
-import React from 'react'
-import { Title, WorkImage, Tag } from '../../../layouts/work-grid'
+import React from "react";
+import { Title, WorkImage, Tag } from "../../../layouts/work-grid";
 import {
   Box,
   Container,
@@ -8,17 +8,17 @@ import {
   OrderedList,
   Divider,
   Link,
-  ListIcon
-} from '@chakra-ui/react'
-import { Writing, DescriptionText } from '../../layout'
-import { ExternalLinkIcon, SmallAddIcon } from '@chakra-ui/icons'
-import data1 from '../Images/data11.png'
-import data2 from '../Images/stacked.png'
-import data3 from '../Images/data3.png'
-import data4 from '../Images/data4.png'
-import datacode from '../Images/datacode.png'
-import cover from '../Images/cover2.png'
-import pdf from '../Images/eva.pdf'
+  ListIcon,
+} from "@chakra-ui/react";
+import { Writing, DescriptionText } from "../../layout";
+import { ExternalLinkIcon, SmallAddIcon } from "@chakra-ui/icons";
+import data1 from "../Images/data11.png";
+import data2 from "../Images/stacked.png";
+import data3 from "../Images/data3.png";
+import data4 from "../Images/data4.png";
+import datacode from "../Images/datacode.png";
+import cover from "../Images/cover2.png";
+import pdf from "../Images/eva.pdf";
 
 const EducationVisualAnalytics = () => {
   return (
@@ -27,8 +27,8 @@ const EducationVisualAnalytics = () => {
         <Title>Education Visual Analytics</Title>
         <WorkImage
           src={cover}
-          alt='Observable Data Visualization Cover'
-          w='full'
+          alt="Observable Data Visualization Cover"
+          w="full"
         />
         {/* BADGES  */}
         <List>
@@ -42,18 +42,18 @@ const EducationVisualAnalytics = () => {
           <ListItem>
             <Tag> Source </Tag>
             <Link
-              color='blue.500'
-              href='https://observablehq.com/@jamesyoo/iat-355-final-project-spring-2021/2'
+              color="blue.500"
+              href="https://observablehq.com/@jamesyoo/iat-355-final-project-spring-2021/2"
               isExternal
-              target='blank'
+              target="blank"
             >
               ObservableHQ Link
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
         {/* OVERVIEW   */}
-        <Writing size='md' title='Overview' />
+        <Writing size="md" title="Overview" />
         <DescriptionText>
           The right to education is one of the key principles in our life and
           everyone should have the same opportunity to receive the education
@@ -64,7 +64,7 @@ const EducationVisualAnalytics = () => {
         </DescriptionText>
         <Divider />
         {/* SCOPE  */}
-        <Writing size='md' title='Scope' />
+        <Writing size="md" title="Scope" />
         <DescriptionText>
           I choose this data visualization because I was interested in how
           parental level of education and income can influence child performance
@@ -76,7 +76,7 @@ const EducationVisualAnalytics = () => {
         </DescriptionText>
         <Divider />
         {/* DOMAIN QUESTIONS  */}
-        <Writing size='md' title='Domain Questions' />
+        <Writing size="md" title="Domain Questions" />
         <DescriptionText>
           I used data visualizations using these four domain questions in hopes
           to find patterns:
@@ -101,31 +101,31 @@ const EducationVisualAnalytics = () => {
         </OrderedList>
         <Divider />
         {/* THE DATASET  */}
-        <Writing size='md' title='The Dataset' />
+        <Writing size="md" title="The Dataset" />
         <DescriptionText>
           I have used two datasets from Royce Kimmons and the datasets are
           called:
           <Box my={2}>
             <Container>
               <Link
-                color='blue.500'
-                href='http://roycekimmons.com/tools/generated_data/exams'
+                color="blue.500"
+                href="http://roycekimmons.com/tools/generated_data/exams"
                 isExternal
-                target='blank'
+                target="blank"
               >
                 Exam Scores
-                <ExternalLinkIcon mx='2px' />
+                <ExternalLinkIcon mx="2px" />
               </Link>
             </Container>
             <Container>
               <Link
-                color='blue.500'
-                href='http://roycekimmons.com/tools/generated_data/graduation_rate'
+                color="blue.500"
+                href="http://roycekimmons.com/tools/generated_data/graduation_rate"
                 isExternal
-                target='blank'
+                target="blank"
               >
                 Graduation Rate
-                <ExternalLinkIcon mx='2px' />
+                <ExternalLinkIcon mx="2px" />
               </Link>
             </Container>
           </Box>
@@ -136,7 +136,7 @@ const EducationVisualAnalytics = () => {
 
         <Divider />
 
-        <Writing size='md' title='Data Visualization' />
+        <Writing size="md" title="Data Visualization" />
         <DescriptionText>
           With varieties type of variables, I explored different types of charts
           and different dimensions to approach the domain questions. Using
@@ -154,48 +154,48 @@ const EducationVisualAnalytics = () => {
         </DescriptionText>
         <WorkImage
           src={datacode}
-          alt='D3JS coding '
-          caption='A code snippet of an interactive scatter plot using D3JS to create a scate'
-          w='full'
+          alt="D3JS coding "
+          caption="A code snippet of an interactive scatter plot using D3JS to create a scate"
+          w="full"
         />
 
         <Divider />
 
-        <Writing size='md' title='Interactivity' />
+        <Writing size="md" title="Interactivity" />
         <DescriptionText>
           I had two kinds of interactivity in my data visualization.
           <List>
             <ListItem>
-              <ListIcon as={SmallAddIcon} color='green.500' />
+              <ListIcon as={SmallAddIcon} color="green.500" />
               Sorted the histogram from ascending to descending allowing the
               user to easily identify the extremum and also sort the data cases.
-            </ListItem>{' '}
+            </ListItem>{" "}
             <WorkImage
               src={data1}
-              alt='Histogram chart'
-              caption='Histogram chart to show relationship between parental level of education and the children score'
-              w='full'
+              alt="Histogram chart"
+              caption="Histogram chart to show relationship between parental level of education and the children score"
+              w="full"
             />
             <ListItem>
-              <ListIcon as={SmallAddIcon} color='green.500' />
+              <ListIcon as={SmallAddIcon} color="green.500" />
               An option for user to choose which attribute in the parental level
               of education to filter out the plots in the chart to see the
               populated scattered plots to find the trends and pattern.
             </ListItem>
             <WorkImage
               src={data4}
-              alt='Interactive scattered plot'
-              caption='An interactive scattered plot graph that shows the relationship 
+              alt="Interactive scattered plot"
+              caption="An interactive scattered plot graph that shows the relationship 
               between parental income adn years to graduate colored by the parental level 
-              of education'
-              w='full'
+              of education"
+              w="full"
             />
           </List>
         </DescriptionText>
 
         <Divider />
 
-        <Writing size='md' title='Final Result' />
+        <Writing size="md" title="Final Result" />
         <DescriptionText>
           THis project displayed how students can be impacted or influenced in
           general from the parental level of education and their income. I
@@ -213,31 +213,31 @@ const EducationVisualAnalytics = () => {
         </DescriptionText>
 
         <Link
-          color='blue.500'
+          color="blue.500"
           href={pdf}
           isExternal
-          target='blank'
-          download='DataViz-Report.pdf'
+          target="blank"
+          download="DataViz-Report.pdf"
         >
           Click here to see download my Data Visualization Report (PDF)
-          <ExternalLinkIcon mx='2px' />
+          <ExternalLinkIcon mx="2px" />
         </Link>
         <WorkImage
           src={data2}
-          alt='Stacked bar'
-          caption='A stacked bar to display how many students there are with different parental levels of education and divides students into the color of how many years to graduate. '
-          w='full'
+          alt="Stacked bar"
+          caption="A stacked bar to display how many students there are with different parental levels of education and divides students into the color of how many years to graduate. "
+          w="full"
         />
 
         <WorkImage
           src={data3}
-          alt='Histogram chart'
-          caption='A 2D histogram scatter plot that shows relationship between college and high school GPA with color labelled by median of parental income'
-          w='full'
+          alt="Histogram chart"
+          caption="A 2D histogram scatter plot that shows relationship between college and high school GPA with color labelled by median of parental income"
+          w="full"
         />
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default EducationVisualAnalytics
+export default EducationVisualAnalytics;

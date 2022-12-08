@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useColorMode } from '@chakra-ui/color-mode'
-import { useMediaQuery } from '@chakra-ui/media-query'
+import React from "react";
+import { Link } from "react-router-dom";
+import { useColorMode } from "@chakra-ui/color-mode";
+import { useMediaQuery } from "@chakra-ui/media-query";
 
 import {
   Center,
@@ -11,13 +11,13 @@ import {
   Button,
   Heading,
   Image,
-  SimpleGrid
-} from '@chakra-ui/react'
-import profile from '../work/Home/cover.JPG'
+  SimpleGrid,
+} from "@chakra-ui/react";
+import profile from "../work/Home/cover.JPG";
 
 export const HeroSection = ({ name, role, work, contact }) => {
-  const { colorMode } = useColorMode()
-  const isDark = colorMode === 'dark'
+  const { colorMode } = useColorMode();
+  const isDark = colorMode === "dark";
 
   return (
     <Center>
@@ -25,38 +25,38 @@ export const HeroSection = ({ name, role, work, contact }) => {
         <Box>
           <Center>
             <Image
-              boxSize='350px'
+              boxSize="350px"
               src={profile}
-              objectFit='cover'
-              borderRadius='full'
-              objectPosition={'0% 100%'}
+              objectFit="cover"
+              borderRadius="full"
+              objectPosition={"0% 100%"}
             />
           </Center>
 
-          <Text fontSize='3xl' fontWeight='semibold'>
+          <Text fontSize="3xl" fontWeight="semibold">
             {name}
           </Text>
-          <Text color={isDark ? 'gray.200' : 'black'} mb={4}>
+          <Text color={isDark ? "gray.200" : "black"} mb={4}>
             {role}
           </Text>
           <SimpleGrid column={1}>
-            <Link to='./work'>
+            <Link to="./work">
               <Button
-                colorScheme='teal'
-                cursor='pointer'
-                variant='solid'
-                w='full'
+                colorScheme="teal"
+                cursor="pointer"
+                variant="solid"
+                w="full"
                 mb={3}
               >
                 {work}
               </Button>
             </Link>
-            <Link to='./contact'>
+            <Link to="./contact">
               <Button
-                colorScheme='teal'
-                cursor='pointer'
-                variant='outline'
-                w='full'
+                colorScheme="teal"
+                cursor="pointer"
+                variant="outline"
+                w="full"
               >
                 {contact}
               </Button>
@@ -65,70 +65,70 @@ export const HeroSection = ({ name, role, work, contact }) => {
         </Box>
       </Flex>
     </Center>
-  )
-}
+  );
+};
 
 export const About = ({ title, bio }) => {
-  const [isLargeScreen] = useMediaQuery('(min-width:750px)')
+  const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
   return (
     <Center>
-      <Box width={isLargeScreen ? '600px' : '80%'} margin='auto'>
-        <Heading size={isLargeScreen ? 'md' : 'lg'} as='u'>
+      <Box width={isLargeScreen ? "600px" : "80%"} margin="auto">
+        <Heading size={isLargeScreen ? "md" : "lg"} as="u">
           {title}
         </Heading>
         <Text
-          textAlign='justify'
-          py='10px'
-          fontSize={{ sm: 'lg', md: 'lg', lg: 'md' }}
+          textAlign="justify"
+          py="10px"
+          fontSize={{ sm: "lg", md: "lg", lg: "md" }}
         >
           {bio}
         </Text>
       </Box>
     </Center>
-  )
-}
+  );
+};
 
 export const Bio = () => {
-  const [isLargeScreen] = useMediaQuery('(min-width:750px)')
+  const [isLargeScreen] = useMediaQuery("(min-width:750px)");
   return (
     <>
       <Center>
-        <Box width={isLargeScreen ? '600px' : '80%'} margin='auto'></Box>
+        <Box width={isLargeScreen ? "600px" : "80%"} margin="auto"></Box>
       </Center>
     </>
-  )
-}
+  );
+};
 
 export const Writings = ({ size, title, description }) => {
   return (
     <>
-      <Heading size={size} mt={3} mb={1} fontWeight='semibold'>
+      <Heading size={size} mt={3} mb={1} fontWeight="semibold">
         {title}
       </Heading>
-      <Text mb={3} fontSize='lg' textAlign='justify'>
+      <Text mb={3} fontSize="lg" textAlign="justify">
         {description}
       </Text>
     </>
-  )
-}
+  );
+};
 
 export const Writing = ({ size, title }) => {
   return (
     <>
-      <Heading size={size} mt={3} mb={1} fontWeight='semibold'>
+      <Heading size={size} mt={3} mb={1} fontWeight="semibold">
         {title}
       </Heading>
     </>
-  )
-}
+  );
+};
 
 export const DescriptionText = ({ children }) => {
   return (
     <>
-      <Text mb={3} fontSize='lg' textAlign='justify'>
+      <Text mb={3} fontSize="lg" textAlign="left">
         {children}
       </Text>
     </>
-  )
-}
+  );
+};
