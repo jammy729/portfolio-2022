@@ -22,7 +22,9 @@ const Brixwork = () => {
   return (
     <Box>
       <Container>
-        <Title>Leslie McConnell - Brixwork Real Estate Marketing</Title>
+        <Title>
+          Leslie McConnell (Client) - Brixwork Real Estate Marketing
+        </Title>
         <WorkImage src={cover} alt="Leslie McConnell Homepage" w="full" />
         {/* BADGES  */}
         <List>
