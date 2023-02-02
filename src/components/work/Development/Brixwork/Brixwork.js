@@ -8,7 +8,6 @@ import {
   OrderedList,
   Divider,
   Link,
-  ListIcon,
 } from "@chakra-ui/react";
 import { Writing, DescriptionText } from "../../layout";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
