@@ -21,7 +21,7 @@ import backend_marketing from "./backend-marketing.png";
 const Brixwork = () => {
   return (
     <Box>
-      <Container maxW="container.lg">
+      <Container>
         <Title>Leslie McConnell - Brixwork Real Estate Marketing</Title>
         <WorkImage src={cover} alt="Leslie McConnell Homepage" w="full" />
         {/* BADGES  */}
