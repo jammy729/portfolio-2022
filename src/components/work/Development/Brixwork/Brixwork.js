@@ -17,6 +17,7 @@ import dynamic_fetch from "./dynamic-fetch-php.png";
 import marketing_block from "./marketing-block.png";
 import cover from "./cover.png";
 import backend_marketing from "./backend-marketing.png";
+
 const Brixwork = () => {
   return (
     <Box>
