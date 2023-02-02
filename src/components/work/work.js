@@ -9,11 +9,11 @@ const Work = () => {
   return (
     <Box>
       <Container maxW="850px">
-        <Layout title="Development" id="development">
+        <Layout title="Work" id="development">
           <SimpleGrid columns="1" spacing={2} py={3}>
             <WorkGrid
               id="brixwork"
-              title="Brixwork Real Estate Marketing"
+              title="[Full Stack Development] Brixwork Real Estate Marketing"
               thumbnail={brixThumb}
             >
               Develop custom websites that are perfect for working with the
@@ -22,7 +22,7 @@ const Work = () => {
             </WorkGrid>
             <WorkGrid
               id="world-institution-database"
-              title="World Institution Database"
+              title="[Full Stack Development] World Institution Database"
               thumbnail={worldThumb}
             >
               A functional web application that allows users to browse through a
@@ -31,7 +31,7 @@ const Work = () => {
             </WorkGrid>
             <WorkGrid
               id="education-visual-analytics"
-              title="Educational Visual Analytics"
+              title="[Visual Analyst] Educational Visual Analytics"
               thumbnail={evaThumb}
             >
               Designed and implemented an interactive visualization for

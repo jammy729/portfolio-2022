@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Container,
   Box,
@@ -6,25 +6,25 @@ import {
   ListItem,
   Divider,
   AspectRatio,
-  Link
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Tag } from '../../../layouts/work-grid'
-import { Writing, DescriptionText } from '../../layout'
+  Link,
+} from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title, WorkImage, Tag } from "../../../layouts/work-grid";
+import { Writing, DescriptionText } from "../../layout";
 
-import dbms from '../Images/er-diagram.png'
-import cover from '../Images/image4.png'
-import register from '../Images/register.png'
-import register_code from '../Images/register_code.png'
-import login_code from '../Images/login_code.png'
-import image11 from '../Images/image11.png'
+import dbms from "../Images/er-diagram.png";
+import cover from "../Images/image4.png";
+import register from "../Images/register.png";
+import register_code from "../Images/register_code.png";
+import login_code from "../Images/login_code.png";
+import image11 from "../Images/image11.png";
 
 const WorldInstitutionDatabase = () => {
   return (
     <Box>
-      <Container maxW='850px'>
+      <Container maxW="container.lg">
         <Title>World Institution Database</Title>
-        <WorkImage src={cover} alt='Entity Relationship Diagram' w='full' />
+        <WorkImage src={cover} alt="Entity Relationship Diagram" w="full" />
         <List py={2}>
           <ListItem>
             <Tag> Type </Tag> Web Development, Academic Team Project
@@ -38,19 +38,19 @@ const WorldInstitutionDatabase = () => {
           <ListItem>
             <Tag> Source </Tag>
             <Link
-              color='blue.500'
-              href='https://github.com/rubik516/iat352-institution-reviews-web-app'
+              color="blue.500"
+              href="https://github.com/rubik516/iat352-institution-reviews-web-app"
               isExternal
-              target='blank'
+              target="blank"
             >
-              GithubLink <ExternalLinkIcon mx='2px' />
+              GithubLink <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
 
         <Divider />
 
-        <Writing size='md' title='Summary' />
+        <Writing size="md" title="Summary" />
         <DescriptionText>
           World Institution Database is a web application built with a team of
           two with the main focus around backend functionalities. It is a
@@ -61,7 +61,7 @@ const WorldInstitutionDatabase = () => {
 
         <Divider />
 
-        <Writing size='md' title='Contribution' />
+        <Writing size="md" title="Contribution" />
         <DescriptionText>
           My role in this project divided into two parts, the design of the
           Entity-Relationship diagram and schema table, and the frontend and
@@ -70,14 +70,14 @@ const WorldInstitutionDatabase = () => {
 
         <WorkImage
           src={image11}
-          alt='MySQL Database set up'
-          caption='Database structure in MySQL'
-          w='full'
+          alt="MySQL Database set up"
+          caption="Database structure in MySQL"
+          w="full"
         />
 
         <Divider />
 
-        <Writing size='md' title='Database Analysis' />
+        <Writing size="md" title="Database Analysis" />
         <DescriptionText>
           I created an entity-relationship diagram (ER) diagram to illustrate
           how entities relate to each other in a system. This step was one of
@@ -87,11 +87,11 @@ const WorldInstitutionDatabase = () => {
 
         <WorkImage
           src={dbms}
-          alt='Entity Relationship Diagram'
-          caption='Entity-Relationship diagram for the web application World Institution Database'
-          w='full'
+          alt="Entity Relationship Diagram"
+          caption="Entity-Relationship diagram for the web application World Institution Database"
+          w="full"
         />
-        <Writing size='sm' title='Justification for the ER Diagram Design' />
+        <Writing size="sm" title="Justification for the ER Diagram Design" />
         <DescriptionText>
           To create an ER diagram, understanding what kind of entities are
           involved in this web application and the relationship between the two
@@ -120,7 +120,7 @@ const WorldInstitutionDatabase = () => {
 
         <Divider />
         {/* FRONT-END */}
-        <Writing size='md' title='Frontend Development' />
+        <Writing size="md" title="Frontend Development" />
         <DescriptionText>
           After quick sketches and prototype on Figma on how I wanted the forms
           to look like for login and register page, I have decided to code with
@@ -133,11 +133,11 @@ const WorldInstitutionDatabase = () => {
 
         <WorkImage
           src={register}
-          alt='Registration Form Page'
-          caption='Registration form page for the web application'
-          w='full'
+          alt="Registration Form Page"
+          caption="Registration form page for the web application"
+          w="full"
         />
-        <Writing size='sm' title='Validation of the Forms' />
+        <Writing size="sm" title="Validation of the Forms" />
         <DescriptionText>
           Registration validation is supported and done using a jQuery
           Validation Plugin to check whether the forms are filled correctly
@@ -150,11 +150,11 @@ const WorldInstitutionDatabase = () => {
 
         <WorkImage
           src={register_code}
-          alt='Register User PHP Code'
-          caption='PHP code for when the registration form fills are set'
-          w='full'
+          alt="Register User PHP Code"
+          caption="PHP code for when the registration form fills are set"
+          w="full"
         />
-        <Writing size='msmd' title='Validation of the Forms' />
+        <Writing size="msmd" title="Validation of the Forms" />
         <DescriptionText>
           Registration validation is supported and done using a jQuery
           Validation Plugin to check whether the forms are filled correctly
@@ -165,7 +165,7 @@ const WorldInstitutionDatabase = () => {
           error to the user to guide through the registration process.
         </DescriptionText>
 
-        <Writing size='sm' title='Backend Development' />
+        <Writing size="sm" title="Backend Development" />
         <DescriptionText>
           Once the user fill the form and satisfy the rules, it connects to
           MySQL database, and receive all the input value form from the user and
@@ -188,14 +188,14 @@ const WorldInstitutionDatabase = () => {
 
         <WorkImage
           src={login_code}
-          alt='Login Form Page'
-          caption='Login form PHP code for the web application'
-          w='full'
+          alt="Login Form Page"
+          caption="Login form PHP code for the web application"
+          w="full"
         />
 
         <Divider />
 
-        <Writing size='md' title='Challenges' />
+        <Writing size="md" title="Challenges" />
         <DescriptionText>
           This project was very challenging so the group naturally led the focus
           to the backend functionalities and less on the frontend. Looking back
@@ -212,7 +212,7 @@ const WorldInstitutionDatabase = () => {
 
         <Divider />
 
-        <Writing size='md' title='Reflection' />
+        <Writing size="md" title="Reflection" />
         <DescriptionText>
           Through this project, I have seen myself grow as a developer in terms
           of collaboration with a member and good understanding of backend
@@ -230,17 +230,20 @@ const WorldInstitutionDatabase = () => {
           frontend.
         </DescriptionText>
 
-        <AspectRatio ratio='2'>
+        <AspectRatio ratio="2">
           <video controls>
             <source
-              src={require('./universityDatabase.mp4')}
-              type='video/mp4'
+              src={require("./universityDatabase.mp4")}
+              type="video/mp4"
             />
           </video>
         </AspectRatio>
+        <br />
+        <br />
+        <br />
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default WorldInstitutionDatabase
+export default WorldInstitutionDatabase;

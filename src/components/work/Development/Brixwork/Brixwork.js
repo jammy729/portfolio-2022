@@ -21,7 +21,7 @@ import backend_marketing from "./backend-marketing.png";
 const Brixwork = () => {
   return (
     <Box>
-      <Container>
+      <Container maxW="container.lg">
         <Title>Leslie McConnell - Brixwork Real Estate Marketing</Title>
         <WorkImage src={cover} alt="Leslie McConnell Homepage" w="full" />
         {/* BADGES  */}
@@ -46,6 +46,22 @@ const Brixwork = () => {
             </Link>
           </ListItem>
         </List>
+
+        {/* OVERVIEW   */}
+        <Writing size="md" title="Overview" />
+        <DescriptionText>
+          I had the amazing opportunity to work at the Brixwork Real Estate
+          Marketing as a Front-end Web Developer for 4 months (Late August ~
+          Late December) for Fall 2022. The company creates carefully crafted
+          websites for real estate professionals across North America.
+        </DescriptionText>
+        <DescriptionText>
+          As someone who loves and take huge pride in craftmanship, this role
+          was perfect for me to learn and grow as a developer. My job did not
+          only consist of web development but also SEO on-site engineering,
+          glimpse of DevOps and maintain cPanel host at root level.
+        </DescriptionText>
+        <Divider />
         <Writing size="md" title="My Learning Objectives" />
         <DescriptionText>
           The learning objectives were also my challenges that I wanted to
@@ -65,21 +81,6 @@ const Brixwork = () => {
             To be comfortable with SCSS, jQuery and code structure
           </ListItem>
         </OrderedList>
-        <Divider />
-        {/* OVERVIEW   */}
-        <Writing size="md" title="Overview" />
-        <DescriptionText>
-          I had the amazing opportunity to work at the Brixwork Real Estate
-          Marketing as a Front-end Web Developer for 4 months (Late August ~
-          Late December) for Fall 2022. The company creates carefully crafted
-          websites for real estate professionals across North America.
-        </DescriptionText>
-        <DescriptionText>
-          As someone who loves and take huge pride in craftmanship, this role
-          was perfect for me to learn and grow as a developer. My job did not
-          only consist of web development but also SEO on-site engineering,
-          glimpse of DevOps and maintain cPanel host at root level.
-        </DescriptionText>
         <Divider />
         {/* Work  */}
         <Writing size="md" title="Main Project" />

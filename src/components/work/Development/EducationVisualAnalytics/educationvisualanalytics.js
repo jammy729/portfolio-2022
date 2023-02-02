@@ -23,7 +23,7 @@ import pdf from "../Images/eva.pdf";
 const EducationVisualAnalytics = () => {
   return (
     <Box>
-      <Container>
+      <Container maxW="container.lg">
         <Title>Education Visual Analytics</Title>
         <WorkImage
           src={cover}
@@ -236,6 +236,9 @@ const EducationVisualAnalytics = () => {
           w="full"
         />
       </Container>
+      <br />
+      <br />
+      <br />
     </Box>
   );
 };
