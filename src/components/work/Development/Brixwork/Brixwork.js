@@ -61,8 +61,11 @@ const Brixwork = () => {
           only consist of web development but also SEO on-site engineering,
           glimpse of DevOps and maintain cPanel host at root level.
         </DescriptionText>
+        <DescriptionText>
+          The 
+        </DescriptionText>
         <Divider />
-        <Writing size="md" title="My Learning Objectives" />
+        {/* <Writing size="md" title="My Learning Objectives" />
         <DescriptionText>
           The learning objectives were also my challenges that I wanted to
           overcome and feel comfortable. My learning objectives were:
@@ -81,16 +84,14 @@ const Brixwork = () => {
             To be comfortable with SCSS, jQuery and code structure
           </ListItem>
         </OrderedList>
-        <Divider />
+        <Divider /> */}
         {/* Work  */}
         <Writing size="md" title="Main Project" />
         <DescriptionText>
           My main project was the custom website I made for a realtor Leslie
           McConnell who is an independent broker member of Engel & Volker in
-          Vancouver, BC. This was my first full website project but second
-          project as my first project was an upgrade from an existing client.
+          Vancouver, BC.
         </DescriptionText>
-        <Writing size="sm" title="Project" />
         <WorkImage
           src={server_point}
           alt="terminal command to check whether the client server is pointing to the Brixwork server"
