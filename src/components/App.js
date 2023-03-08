@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
+import Footer from "./footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./home";
 import Work from "./work/work";
@@ -28,6 +29,7 @@ const App = () => {
         <Route exact path="/work/brixwork" element={<Brixwork />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

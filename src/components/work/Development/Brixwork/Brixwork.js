@@ -5,7 +5,6 @@ import {
   Container,
   List,
   ListItem,
-  OrderedList,
   Divider,
   Link,
 } from "@chakra-ui/react";
@@ -22,8 +21,8 @@ const Brixwork = () => {
   return (
     <Box>
       <Container maxW="container.lg">
-        <Title>Leslie McConnell - Brixwork Real Estate Marketing</Title>
-        <WorkImage src={cover} alt="Leslie McConnell Homepage" w="full" />
+        <Title>Brixwork Real Estate Marketing</Title>
+        <WorkImage src={cover} alt="Brixwork Real Estate Marketing" w="full" />
         {/* BADGES  */}
         <List>
           <ListItem>
@@ -57,34 +56,13 @@ const Brixwork = () => {
         </DescriptionText>
         <DescriptionText>
           As someone who loves and take huge pride in craftmanship, this role
-          was perfect for me to learn and grow as a developer. My job did not
-          only consist of web development but also SEO on-site engineering,
-          glimpse of DevOps and maintain cPanel host at root level.
+          was perfect for me to learn and grow as a developer. My task consisted
+          of front-end development and also had the opportunity to gain insight
+          on backend development, DevOps operation, maintain cPanel at the rool
+          level and little hands on AWS S3.
         </DescriptionText>
-        <DescriptionText>
-          The 
-        </DescriptionText>
+        <DescriptionText>The</DescriptionText>
         <Divider />
-        {/* <Writing size="md" title="My Learning Objectives" />
-        <DescriptionText>
-          The learning objectives were also my challenges that I wanted to
-          overcome and feel comfortable. My learning objectives were:
-        </DescriptionText>
-        <OrderedList mb={3}>
-          <ListItem>
-            To understand how content-management system(CMS) backend structure
-            works and learn to utilize the backend code to create more dynamic
-            front-end for clients
-          </ListItem>
-          <ListItem>
-            To have a stronger foundation in HTML, and PHP rather than focusing
-            on a framework with lack of foundation
-          </ListItem>
-          <ListItem>
-            To be comfortable with SCSS, jQuery and code structure
-          </ListItem>
-        </OrderedList>
-        <Divider /> */}
         {/* Work  */}
         <Writing size="md" title="Main Project" />
         <DescriptionText>
@@ -92,12 +70,7 @@ const Brixwork = () => {
           McConnell who is an independent broker member of Engel & Volker in
           Vancouver, BC.
         </DescriptionText>
-        <WorkImage
-          src={server_point}
-          alt="terminal command to check whether the client server is pointing to the Brixwork server"
-          caption="Image 1 - A terminal command line to check whether the client server is pointing to the Brixwork server"
-          w="full"
-        />
+
         <DescriptionText>
           My project began after the client's approval of the website design
           sent by the designer team and is uploaded on Zeplin (product
@@ -112,20 +85,14 @@ const Brixwork = () => {
           After the coding was done, I went through three QA sessions with the
           senior designer and made changes accordingly.
         </DescriptionText>
+        <WorkImage
+          src={server_point}
+          alt="terminal command to check whether the client server is pointing to the Brixwork server"
+          caption="Image 1 - A terminal command line to check whether the client server is pointing to the Brixwork server"
+          w="full"
+        />
         <Writing size="sm" title="Challenges" />
 
-        <WorkImage
-          src={backend_marketing}
-          alt="client's backend"
-          caption="Image 2 - View of clien't backend which allows client's to create subpages, contents, images and other enabled modules"
-          w="full"
-        />
-        <WorkImage
-          src={dynamic_fetch}
-          alt="a function to fetch datas dynamically from the backend"
-          caption="Image 3 - PHP code to fetch the subpage datas dynamically on the marketing page"
-          w="full"
-        />
         <DescriptionText>
           The website fetches data from the custom-made
           content-management-system (CMS) from the client admin backend (image
@@ -140,11 +107,18 @@ const Brixwork = () => {
           through to complete tasks in a shorter amount of time (image 3).
         </DescriptionText>
         <WorkImage
-          src={marketing_block}
-          alt="frontend of marketing page with dynamic fetch"
-          caption="Image 4 - Frontend view when the datas are fetched dynamically and styled to individual divs"
+          src={backend_marketing}
+          alt="client's backend"
+          caption="Image 2 - View of clien't backend which allows client's to create subpages, contents, images and other enabled modules"
           w="full"
         />
+        <WorkImage
+          src={dynamic_fetch}
+          alt="a function to fetch datas dynamically from the backend"
+          caption="Image 3 - PHP code to fetch the subpage datas dynamically on the marketing page"
+          w="full"
+        />
+
         <DescriptionText>
           My second challenges was being familiar with SCSS. Prior to SCSS, I
           had basic fundamentals of CSS but mainly used CSS frameworks such as
@@ -157,6 +131,12 @@ const Brixwork = () => {
           felt comfortable manipulating individual divs to style when datas are
           dynamically fetched as seen on image 4.
         </DescriptionText>
+        <WorkImage
+          src={marketing_block}
+          alt="frontend of marketing page with dynamic fetch"
+          caption="Image 4 - Frontend view when the datas are fetched dynamically and styled to individual divs"
+          w="full"
+        />
         <Divider />
         <Writing size="md" title="Reflection" />
         <DescriptionText>
