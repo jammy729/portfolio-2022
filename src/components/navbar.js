@@ -1,8 +1,8 @@
-import { Link as LinkRouter } from 'react-router-dom'
-import { IconButton } from '@chakra-ui/button'
-import { useColorMode } from '@chakra-ui/color-mode'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import { GoMarkGithub } from 'react-icons/go'
+import { Link as LinkRouter } from "react-router-dom";
+import { IconButton } from "@chakra-ui/button";
+import { useColorMode } from "@chakra-ui/color-mode";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { GoMarkGithub } from "react-icons/go";
 import {
   Flex,
   Stack,
@@ -17,41 +17,48 @@ import {
   Text,
   Icon,
   Tooltip,
-  Link
-} from '@chakra-ui/react'
-import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa'
+  Link,
+} from "@chakra-ui/react";
+import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import resume from './resume.pdf'
-import Logo from './logo'
+import resume from "./resume_2023.pdf";
+import Logo from "./logo";
+
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
-  const isDark = colorMode === 'dark'
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
+
   return (
-    <Stack direction={'row'} p={5}>
-      <Flex w='full' mx={2}>
+    <Stack direction={"row"} p={5}>
+      <Flex w="full" mx={2}>
         <Logo />
 
         {/* DESKTOP  */}
         <HStack
           ml={7}
-          justifyContent='center'
-          alignItems='center'
-          display={{ base: 'none', lg: 'flex' }}
+          justifyContent="center"
+          alignItems="center"
+          display={{ base: "none", lg: "flex" }}
         >
           <Menu>
             <Box px={3}>
-              <LinkRouter to='./work'>
-                <Text fontWeight='semibold'>Works</Text>
+              <LinkRouter to="./work">
+                <Text fontWeight="semibold">Works</Text>
               </LinkRouter>
             </Box>
             <Box px={3}>
-              <LinkRouter to='./contact'>
-                <Text fontWeight='semibold'>Contact Me</Text>
+              <LinkRouter to="./contact">
+                <Text fontWeight="semibold">Contact Me</Text>
               </LinkRouter>
             </Box>
             <Box px={3}>
-              <Link href={resume} isExternal target='blank' download='Resume'>
-                <Text fontWeight='semibold'>Resume</Text>
+              <Link
+                href={resume}
+                isExternal
+                target="blank"
+                download="James Yoo - Resume"
+              >
+                <Text fontWeight="semibold">Resume</Text>
               </Link>
             </Box>
           </Menu>
@@ -60,59 +67,59 @@ const Navbar = () => {
         <Spacer />
 
         {/* RESPONSIVE  */}
-        <Box flex={3} align='right' fontSize='md' fontWeight='semibold'>
-          <Box flex={1} display={{ base: 'inline-block', lg: 'none' }}>
-            <Menu isLazy id='navbar-menu'>
+        <Box flex={3} align="right" fontSize="md" fontWeight="semibold">
+          <Box flex={1} display={{ base: "inline-block", lg: "none" }}>
+            <Menu isLazy id="navbar-menu">
               <Tooltip
-                label={isDark ? 'Light Mode' : 'Dark Mode'}
-                fontSize='md'
+                label={isDark ? "Light Mode" : "Dark Mode"}
+                fontSize="md"
               >
                 <IconButton
-                  boxSize='3rem'
+                  boxSize="3rem"
                   mx={1}
                   icon={isDark ? <FaSun /> : <FaMoon />}
                   onClick={toggleColorMode}
-                  colorScheme={isDark ? 'orange' : 'purple'}
+                  colorScheme={isDark ? "orange" : "purple"}
                 />
               </Tooltip>
-              <Tooltip label='Menu' fontSize='md'>
+              <Tooltip label="Menu" fontSize="md">
                 <MenuButton
-                  boxSize='3rem'
+                  boxSize="3rem"
                   as={IconButton}
                   icon={<HamburgerIcon />}
-                  aria-label='Options'
-                  colorScheme={isDark ? 'blue' : 'blackAlpha'}
+                  aria-label="Options"
+                  colorScheme={isDark ? "blue" : "blackAlpha"}
                 />
               </Tooltip>
-              <MenuList w={['80vw', '50vw']}>
+              <MenuList w={["80vw", "50vw"]}>
                 <MenuGroup>
                   <MenuItem pl={5}>
-                    <LinkRouter to='./work'>Works</LinkRouter>
+                    <LinkRouter to="./work">Works</LinkRouter>
                   </MenuItem>
                   <MenuItem pl={5}>
-                    <LinkRouter to='./contact'>Contact</LinkRouter>
+                    <LinkRouter to="./contact">Contact</LinkRouter>
                   </MenuItem>
                   <MenuItem pl={5}>
                     <Link
                       href={resume}
                       isExternal
-                      target='blank'
-                      download='Resume'
+                      target="blank"
+                      download="Resume"
                     >
                       <Text>Resume</Text>
                     </Link>
                   </MenuItem>
                   <MenuItem pl={5}>
                     <a
-                      href='https://www.linkedin.com/in/james-yoo-b4a1231a5/'
-                      target='blank'
+                      href="https://www.linkedin.com/in/james-yoo-b4a1231a5/"
+                      target="blank"
                     >
                       <Icon as={FaLinkedin} mr={1} />
                       LinkedIn
                     </a>
                   </MenuItem>
                   <MenuItem pl={5}>
-                    <a href='https://github.com/jammy729' target='blank'>
+                    <a href="https://github.com/jammy729" target="blank">
                       <Icon as={GoMarkGithub} mr={1} />
                       GitHub
                     </a>
@@ -123,41 +130,41 @@ const Navbar = () => {
           </Box>
         </Box>
 
-        <Box display={{ base: 'none', lg: 'flex' }}>
+        <Box display={{ base: "none", lg: "flex" }}>
           <a
-            href='https://www.linkedin.com/in/james-yoo-b4a1231a5/'
-            target='blank'
+            href="https://www.linkedin.com/in/james-yoo-b4a1231a5/"
+            target="blank"
           >
-            <Tooltip label='LinkedIn' fontSize='md'>
+            <Tooltip label="LinkedIn" fontSize="md">
               <IconButton
                 icon={<FaLinkedin />}
-                isRound='true'
+                isRound="true"
                 linkButton={true}
                 mx={2}
               />
             </Tooltip>
           </a>
-          <a href='https://github.com/jammy729' target='blank'>
-            <Tooltip label='GitHub' fontSize='md'>
+          <a href="https://github.com/jammy729" target="blank">
+            <Tooltip label="GitHub" fontSize="md">
               <IconButton
                 icon={<FaGithub />}
-                isRound='true'
+                isRound="true"
                 linkButton={true}
               />
             </Tooltip>
           </a>
-          <Tooltip label={isDark ? 'Light Mode' : 'Dark Mode'} fontSize='md'>
+          <Tooltip label={isDark ? "Light Mode" : "Dark Mode"} fontSize="md">
             <IconButton
               ml={8}
               icon={isDark ? <FaSun /> : <FaMoon />}
               onClick={toggleColorMode}
-              colorScheme={isDark ? 'orange' : 'purple'}
+              colorScheme={isDark ? "orange" : "purple"}
             />
           </Tooltip>
         </Box>
       </Flex>
     </Stack>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
