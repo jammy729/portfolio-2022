@@ -61,7 +61,6 @@ const Brixwork = () => {
           on backend development, DevOps operation, maintain cPanel at the rool
           level and little hands on AWS S3.
         </DescriptionText>
-        <DescriptionText>The</DescriptionText>
         <Divider />
         {/* Work  */}
         <Writing size="md" title="Main Project" />
