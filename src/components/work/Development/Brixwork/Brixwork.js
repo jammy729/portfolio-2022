@@ -69,7 +69,6 @@ const Brixwork = () => {
           McConnell who is an independent broker member of Engel & Volker in
           Vancouver, BC.
         </DescriptionText>
-
         <DescriptionText>
           My project began after the client's approval of the website design
           sent by the designer team and is uploaded on Zeplin (product
@@ -90,6 +89,7 @@ const Brixwork = () => {
           caption="Image 1 - A terminal command line to check whether the client server is pointing to the Brixwork server"
           w="full"
         />
+
         <Writing size="sm" title="Challenges" />
 
         <DescriptionText>

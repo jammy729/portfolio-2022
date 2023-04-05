@@ -42,6 +42,8 @@ const Footer = () => {
             </Text>
           </a>
         </Bottom>
+        <div></div>
+        <div></div>
       </HStack>
     </Box>
   );
