@@ -21,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import resume from "./james_resume.pdf";
+import resume from "./resume.pdf";
 import Logo from "./logo";
 
 const Navbar = () => {
