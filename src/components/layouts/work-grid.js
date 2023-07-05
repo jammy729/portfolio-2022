@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   Box,
   LinkBox,
@@ -7,34 +7,34 @@ import {
   Text,
   Image,
   Heading,
-  Badge
-} from '@chakra-ui/react'
-import { useMediaQuery } from '@chakra-ui/media-query'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import { useColorMode } from '@chakra-ui/color-mode'
+  Badge,
+} from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/media-query";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import { useColorMode } from "@chakra-ui/color-mode";
 
 export const WorkGrid = ({ children, id, title, thumbnail }) => {
-  const [isLargeScreen] = useMediaQuery('(min-width:750px)')
+  const [isLargeScreen] = useMediaQuery("(min-width:750px)");
 
   return (
-    <Box maxW='100%' maxH='auto' pb={6} textAlign='center' position='relative'>
+    <Box maxW="100%" maxH="auto" pb={6} textAlign="center" position="relative">
       <Link to={`/work/${id}`}>
-        <LinkBox cursor='pointer'>
+        <LinkBox cursor="pointer">
           <Image
-            objectFit='cover'
-            margin='auto'
+            objectFit="cover"
+            margin="auto"
             src={thumbnail}
             alt={title}
-            placeholder='blur'
-            w='100%'
-            h={isLargeScreen ? '300px' : '270px'}
-            borderRadius='lg'
-            fallbackSrc='https://via.placeholder.com/150'
-            border='2px'
-            borderColor='gray.200'
+            placeholder="blur"
+            w="100%"
+            h={isLargeScreen ? "300px" : "270px"}
+            borderRadius="lg"
+            fallbackSrc="https://via.placeholder.com/150"
+            border="2px"
+            borderColor="gray.200"
           />
           <LinkOverlay to={`/work/${id}`}>
-            <Text mt={2} fontSize={20} fontWeight='semibold'>
+            <Text mt={2} fontSize={20} fontWeight="semibold">
               {title}
             </Text>
           </LinkOverlay>
@@ -44,37 +44,45 @@ export const WorkGrid = ({ children, id, title, thumbnail }) => {
         </LinkBox>
       </Link>
     </Box>
-  )
-}
+  );
+};
 
 export const Title = ({ children }) => (
   <Box mt={5}>
-    <Link to='/work'>Works</Link>
+    <Link to="/work">Works</Link>
     <span>
       <ChevronRightIcon />
     </span>
-    <Heading display='inline-block' as='h3' fontSize={20} mb={4}>
+    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
       {children}
     </Heading>
   </Box>
-)
+);
 
 export const WorkImage = ({ src, alt, caption, w }) => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
 
-  const isDark = colorMode === 'dark'
+  const isDark = colorMode === "dark";
   return (
     <Box mb={3}>
-      <Image borderRadius='sm' w={w} src={src} alt={alt} mt={4} />
-      <Text mt={1} color={isDark ? 'gray.300' : 'gray.500'} fontSize='sm'>
+      <Image
+        borderRadius="sm"
+        w={w}
+        src={src}
+        alt={alt}
+        mt={4}
+        border="1px"
+        borderColor="gray.300"
+      />
+      <Text mt={1} color={isDark ? "gray.300" : "gray.500"} fontSize="sm">
         {caption}
       </Text>
     </Box>
-  )
-}
+  );
+};
 
 export const Tag = ({ children }) => (
-  <Badge colorScheme='green' mr={2}>
+  <Badge colorScheme="green" mr={2}>
     {children}
   </Badge>
-)
+);

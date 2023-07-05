@@ -8,6 +8,7 @@ import Contact from "./contact";
 import UniversityDatabase from "./work/Development/WorldInstitutionDatabase/worldinstitutiondatabase";
 import EducationVisualAnalytic from "./work/Development/EducationVisualAnalytics/educationvisualanalytics";
 import Brixwork from "./work/Development/Brixwork/Brixwork";
+import HomestayCanada from "./work/Development/HomestayCanada/homestaycanada";
 const App = () => {
   return (
     <Router>
@@ -27,6 +28,13 @@ const App = () => {
           element={<EducationVisualAnalytic />}
         />
         <Route exact path="/work/brixwork" element={<Brixwork />} />
+        <Route exact path="/work/brixwork" element={<Brixwork />} />
+        <Route
+          exact
+          path="/work/homestay-canada"
+          element={<HomestayCanada />}
+        />
+
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
