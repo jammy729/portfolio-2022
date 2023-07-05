@@ -25,9 +25,12 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Text opacity={0.7}_hover={{
-              opacity:'1'
-            }}>
+            <Text
+              opacity={0.7}
+              _hover={{
+                opacity: "1",
+              }}
+            >
               <Icon as={GoMarkGithub} mr={1} />
               Github Source
             </Text>
