@@ -118,6 +118,7 @@ const HomestayCanada = () => {
           I have implemented other functionalities such as being able to filter
           by city and type of accomodation such as rental or homestay.
         </DescriptionText>
+
         <WorkImage
           src={filter}
           w="full"
