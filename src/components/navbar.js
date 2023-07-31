@@ -21,9 +21,8 @@ import {
 } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import resume from "./resume";
 import Logo from "./logo";
-
+import fall_resume from "./fall_resume.pdf";
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
@@ -53,7 +52,7 @@ const Navbar = () => {
             </Box>
             <Box px={3}>
               <Link
-                href={resume}
+                href={fall_resume}
                 isExternal
                 target="blank"
                 download="James Yoo - Resume"
@@ -101,7 +100,7 @@ const Navbar = () => {
                   </MenuItem>
                   <MenuItem pl={5}>
                     <Link
-                      href={resume}
+                      href={fall_resume}
                       isExternal
                       target="blank"
                       download="Resume"

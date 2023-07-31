@@ -9360,7 +9360,7 @@ __metadata:
     react-dom: ^18.1.0
     react-icons: ^4.10.1
     react-router-dom: ^6.3.0
-    react-scripts: 5.0.1
+    react-scripts: ^5.0.1
     styled-components: ^5.3.5
     web-vitals: ^2.1.4
   languageName: unknown
@@ -11788,7 +11788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scripts@npm:5.0.1":
+"react-scripts@npm:^5.0.1":
   version: 5.0.1
   resolution: "react-scripts@npm:5.0.1"
   dependencies:
