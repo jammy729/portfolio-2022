@@ -21,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import resume from "./resume.pdf";
+import resume from "./resume";
 import Logo from "./logo";
 
 const Navbar = () => {
@@ -120,7 +120,7 @@ const Navbar = () => {
                   </MenuItem>
                   <MenuItem pl={5}>
                     <a href="https://github.com/jammy729" target="blank">
-                      <Icon as={GoMarkGithub} mr={1} />
+                      <Icon as={FaGithub} mr={1} />
                       GitHub
                     </a>
                   </MenuItem>

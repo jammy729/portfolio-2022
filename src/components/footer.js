@@ -1,6 +1,6 @@
 import { Box, Icon, Text, Container, HStack } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { GoMarkGithub } from "react-icons/go";
+import { FaGithub } from "react-icons/fa";
 
 const Bottom = styled.div`
   position: relative;
@@ -37,7 +37,7 @@ const Footer = () => {
                 opacity: "1",
               }}
             >
-              <Icon as={GoMarkGithub} mr={1} />
+              <Icon as={FaGithub} mr={1} />
               Github Source
             </Text>
           </a>
