@@ -13,7 +13,6 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 import cover from "./cover.png";
 import admin_edit from "./admin-edit.png";
-import room1 from "./room-1.png";
 import room2 from "./room-2.png";
 import near_listing from "./near_listing.png";
 import filter from "./filter.png";
