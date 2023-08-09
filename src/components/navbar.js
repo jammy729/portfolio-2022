@@ -2,6 +2,7 @@ import { Link as LinkRouter } from "react-router-dom";
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { GoMarkGithub } from "react-icons/go";
 import {
   Flex,
   Stack,
