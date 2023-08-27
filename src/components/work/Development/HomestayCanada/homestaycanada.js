@@ -49,33 +49,27 @@ const HomestayCanada = () => {
         {/* OVERVIEW   */}
         <Writing size="md" title="Project Overview" />
         <DescriptionText>
-          For this project, I had the opportunity to develop a customized
-          website that serves as a platform connecting homeowners with
-          individuals seeking homestay or rental opportunities. Leveraging
-          cutting-edge technologies such as Next.js, SCSS, Node.js, Express.js,
-          and MongoDB, I built a robust and user-friendly website that
-          facilitates seamless interactions between homeowners and potential
-          tenants. The website's primary goal is to streamline the process of
-          finding and securing homestay or rental arrangements, offering a
-          convenient and reliable solution for both homeowners and individuals
-          seeking accommodations.
+          I developed a custom website using Next.js, SCSS, Node.js, Express.js,
+          and MongoDB. This website serves as a hub connecting homeowners with
+          potential tenants, simplifying the process of finding homestay or
+          rental arrangements. It's designed to be user-friendly, offering a
+          seamless experience for both homeowners and those seeking
+          accommodations. My goal was to leverage modern technology to create a
+          reliable and convenient solution for this niche
         </DescriptionText>
 
         <Divider />
         {/* Work  */}
         <Writing size="md" title="Custom CMS Architecture" />
         <DescriptionText>
-          Custom CMS Architecture: One of the standout features of this project
-          is the implementation of a custom Content Management System (CMS)
-          architecture. This architecture empowers administrators with complete
-          control over content management, allowing them to easily update and
-          modify the website's information and resources. Through an intuitive
-          and user-friendly interface, administrators can effortlessly manage
-          property listings, upload images, edit property details, and
-          communicate with users. By incorporating this bespoke CMS, we were
-          able to provide the website's administrators with a powerful tool that
-          enhances their efficiency and ensures a seamless content management
-          experience.
+          This project features a custom Content Management System (CMS) I have
+          designed, giving administrators complete control over content
+          management. It simplifies the process of updating and modifying
+          website information and resources. With an intuitive interface,
+          administrators can effortlessly handle property listings, images,
+          property details, and user communication. The CMS boosts efficiency,
+          ensuring a seamless content management experience for website
+          administrators.
         </DescriptionText>
         <WorkImage
           src={edit}
@@ -93,16 +87,12 @@ const HomestayCanada = () => {
         {/* Work  */}
         <Writing size="md" title="Database Integration with MongoDB:" />
         <DescriptionText>
-          I leveraged MongoDB as the database for this project, enabling
-          efficient storage and retrieval of property listings and details. By
-          designing a data schema tailored to the website's needs, MongoDB
-          facilitated seamless storage of location, amenities, pricing, and
-          availability information. Leveraging MongoDB's querying capabilities,
-          I implemented a robust data fetching system, ensuring real-time and
-          relevant property listings for users seeking homestays or rentals.
-          This integration enhances the website's functionality and user
-          experience, providing accurate and up-to-date information to make
-          informed decisions.
+          MongoDB was the database backbone for this project, efficiently
+          storing and retrieving property listings and details. With a
+          customized data structure, it handled location, amenities, pricing,
+          and availability seamlessly. Using MongoDB's queries, I ensured users
+          always got the latest property information, improving the website's
+          functionality and user experience.
         </DescriptionText>
         <WorkImage
           src={room2}

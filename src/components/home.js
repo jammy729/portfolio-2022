@@ -17,10 +17,10 @@ const Home = () => {
 
       <About
         title="About"
-        bio="I am a fourth year undergraduate student in Simon Fraser
-      University (SFU) majoring in BSc Interactive Arts and Technology with concentration in Interactive Systems. 
-      I am an user-centered Full-Stack Developer mainly working with MERN stack. I love problem solving and designing
-      with code."
+        bio="I'm James, a Front-End Developer currently studying Interactive Arts and Technology 
+        with Contentration in Interactive Systems at Simon Fraser University. I am an developer 
+        mainly working with MERN stack. I love problem solving and designing with code.
+      "
       />
 
       <Center>

@@ -49,39 +49,25 @@ const Brixwork = () => {
         {/* OVERVIEW   */}
         <Writing size="md" title="Overview" />
         <DescriptionText>
-          I had the amazing opportunity to work at the Brixwork Real Estate
-          Marketing as a Front-end Web Developer for 4 months (Late August ~
-          Late December) for Fall 2022. The company creates carefully crafted
-          websites for real estate professionals across North America.
-        </DescriptionText>
-        <DescriptionText>
-          As someone who loves and take huge pride in craftmanship, this role
-          was perfect for me to learn and grow as a developer. My task consisted
-          of front-end development and also had the opportunity to gain insight
-          on backend development, DevOps operation, maintain cPanel at the rool
-          level and little hands on AWS S3.
+          I worked as a Front-end Web Developer at Brixwork Real Estate
+          Marketing for four months, from late August to late December 2022.
+          Brixwork specializes in creating websites for real estate
+          professionals across North America. In this role, I honed my
+          development skills, primarily in front-end development, and gained
+          insights into backend development, DevOps operations, and worked with
+          cPanel and AWS S3.
         </DescriptionText>
         <Divider />
         {/* Work  */}
         <Writing size="md" title="Main Project" />
         <DescriptionText>
-          My main project was the custom website I made for a realtor Leslie
-          McConnell who is an independent broker member of Engel & Volker in
-          Vancouver, BC.
-        </DescriptionText>
-        <DescriptionText>
-          My project began after the client's approval of the website design
-          sent by the designer team and is uploaded on Zeplin (product
-          development tool). Once it is ready to code, I follow an initial
-          website procedure which includes DNS check to ensure the server is
-          pointing to the host server and connect to right FTP. As seen on the
-          image 1, I run a command line to check whether the client server is
-          pointing to the company's A record. With the help and guidance of
-          senior developers, I was able to learn and start my first project
-          which many modules were custom.
-          <br />
-          After the coding was done, I went through three QA sessions with the
-          senior designer and made changes accordingly.
+          My primary project involved creating a custom website for Leslie
+          McConnell, an independent broker with Engel & Volkers in Vancouver,
+          BC. I began after receiving the designer team's approved website
+          design via Zeplin, a product development tool. To ensure everything
+          ran smoothly, I followed an initial website procedure, including DNS
+          checks to confirm the server was correctly linked to the host server
+          and connecting to the right FTP.
         </DescriptionText>
         <WorkImage
           src={server_point}
