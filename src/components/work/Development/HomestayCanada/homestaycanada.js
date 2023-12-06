@@ -36,7 +36,7 @@ const HomestayCanada = () => {
             <Tag> Source </Tag>
             <Link
               color="blue.500"
-              href="https://client-homestay-canada.vercel.app/"
+              href="https://homestaycanada.vercel.app//"
               isExternal
               target="blank"
             >
