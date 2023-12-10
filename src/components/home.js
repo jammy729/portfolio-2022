@@ -17,8 +17,9 @@ const Home = () => {
 
       <About
         title="About"
-        bio="I'm James, a Front-End Developer currently studying Interactive Arts and Technology 
-        with Contentration in Interactive Systems at Simon Fraser University. I am an developer 
+        bio="I'm currently working as a Full-Stack Developer at Bridgemark Advisory Services utilizing NodeJS, ExpressJS, TypeScript, AWS SNS, S3, Keycloak, JWT Authentication. 
+        I am in last year studying Interactive Arts and Technology 
+        with Contentration in Interactive Systems and Design at Simon Fraser University. I am an developer 
         mainly working with MERN stack. I love problem solving and designing with code.
       "
       />
